@@ -6,6 +6,13 @@ tags:
   - cheat-sheet
   - command-injection
   - input-validation
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.md
+    title: "OS Command Injection Defense Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # OS Command Injection Defense Cheat Sheet

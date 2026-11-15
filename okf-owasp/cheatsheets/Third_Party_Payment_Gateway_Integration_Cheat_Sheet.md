@@ -7,6 +7,13 @@ tags:
   - payments
   - webhooks
   - business-logic
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Third_Party_Payment_Gateway_Integration_Cheat_Sheet.md
+    title: "Secure Integration of Third-Party Payment Gateways Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Secure Integration of Third-Party Payment Gateways Cheat Sheet

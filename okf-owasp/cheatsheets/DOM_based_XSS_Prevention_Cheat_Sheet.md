@@ -7,6 +7,13 @@ tags:
   - xss
   - dom
   - output-encoding
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.md
+    title: "DOM based XSS Prevention Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # DOM based XSS Prevention Cheat Sheet

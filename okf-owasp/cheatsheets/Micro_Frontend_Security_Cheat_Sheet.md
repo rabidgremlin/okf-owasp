@@ -7,6 +7,13 @@ tags:
   - micro-frontends
   - browser-security
   - architecture
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Micro_Frontend_Security_Cheat_Sheet.md
+    title: "Micro-Frontend Security Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Micro-Frontend Security Cheat Sheet

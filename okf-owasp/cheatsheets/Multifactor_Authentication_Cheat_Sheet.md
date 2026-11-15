@@ -7,6 +7,13 @@ tags:
   - mfa
   - authentication
   - account-recovery
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Multifactor_Authentication_Cheat_Sheet.md
+    title: "Multifactor Authentication Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Multifactor Authentication Cheat Sheet

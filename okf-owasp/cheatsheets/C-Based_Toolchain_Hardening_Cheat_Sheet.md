@@ -7,6 +7,13 @@ tags:
   - compiler-hardening
   - c
   - cpp
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.md
+    title: "C-Based Toolchain Hardening Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # C-Based Toolchain Hardening Cheat Sheet

@@ -7,6 +7,13 @@ tags:
   - file-upload
   - input-validation
   - malware
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/File_Upload_Cheat_Sheet.md
+    title: "File Upload Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # File Upload Cheat Sheet

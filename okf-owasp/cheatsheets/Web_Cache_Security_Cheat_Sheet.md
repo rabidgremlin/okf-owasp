@@ -7,6 +7,13 @@ tags:
   - caching
   - cache-poisoning
   - data-protection
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Web_Cache_Security_Cheat_Sheet.md
+    title: "Web Cache Security Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Web Cache Security Cheat Sheet

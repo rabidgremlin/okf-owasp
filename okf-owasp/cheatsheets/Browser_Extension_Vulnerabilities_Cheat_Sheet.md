@@ -7,6 +7,13 @@ tags:
   - browser-extensions
   - permissions
   - web-security
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Browser_Extension_Vulnerabilities_Cheat_Sheet.md
+    title: "Browser Extension Security Vulnerabilities Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Browser Extension Security Vulnerabilities Cheat Sheet

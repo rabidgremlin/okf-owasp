@@ -7,6 +7,13 @@ tags:
   - idor
   - authorization
   - access-control
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.md
+    title: "Insecure Direct Object Reference Prevention Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Insecure Direct Object Reference Prevention Cheat Sheet

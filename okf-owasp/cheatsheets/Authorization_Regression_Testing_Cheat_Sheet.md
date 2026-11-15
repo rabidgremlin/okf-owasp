@@ -7,6 +7,13 @@ tags:
   - authorization
   - regression-testing
   - access-control
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Authorization_Regression_Testing_Cheat_Sheet.md
+    title: "Authorization Regression Testing Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Authorization Regression Testing Cheat Sheet

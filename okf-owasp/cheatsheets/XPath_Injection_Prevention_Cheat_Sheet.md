@@ -7,6 +7,13 @@ tags:
   - xpath
   - xml
   - injection
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/XPath_Injection_Prevention_Cheat_Sheet.md
+    title: "XPath Injection Prevention Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # XPath Injection Prevention Cheat Sheet

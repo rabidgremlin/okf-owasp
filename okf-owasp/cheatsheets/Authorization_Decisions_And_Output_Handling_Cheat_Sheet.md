@@ -7,6 +7,13 @@ tags:
   - authorization
   - access-control
   - data-filtering
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Authorization_Decisions_And_Output_Handling_Cheat_Sheet.md
+    title: "Authorization Decisions and Output Handling Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Authorization Decisions and Output Handling Cheat Sheet

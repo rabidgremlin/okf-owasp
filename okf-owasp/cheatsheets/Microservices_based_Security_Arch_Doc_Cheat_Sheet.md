@@ -7,6 +7,13 @@ tags:
   - microservices
   - architecture
   - documentation
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/CheatSheetSeries/blob/e5525cc605ad29bd686cdc74c21556a8c9be38d4/cheatsheets/Microservices_based_Security_Arch_Doc_Cheat_Sheet.md
+    title: "Microservices based Security Arch Doc Cheat Sheet"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # Microservices based Security Arch Doc Cheat Sheet
