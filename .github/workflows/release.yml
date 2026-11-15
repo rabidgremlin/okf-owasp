@@ -1,0 +1,53 @@
+name: Release bundle
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out release commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Package bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          staging_dir="$(mktemp -d "$RUNNER_TEMP/owasp-bundle.XXXXXX")"
+          cp -a okf-owasp/. "$staging_dir/"
+          cp LICENSE "$staging_dir/LICENSE"
+          cat > "$staging_dir/README.md" <<'EOF'
+          # OWASP OKF Bundle
+
+          This is the OWASP OKF Bundle, containing the OWASP Top Ten 2025 risks
+          and OWASP Cheat Sheet Series guidance in Open Knowledge Format.
+
+          Project: https://github.com/rabidgremlin/okf-owasp
+
+          Start with index.md to explore the bundle.
+          See LICENSE for licensing information.
+          EOF
+          cd "$staging_dir"
+          zip -r "$RUNNER_TEMP/okf-owasp.zip" .
+          unzip -t "$RUNNER_TEMP/okf-owasp.zip"
+
+      - name: Upload release asset
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -euo pipefail
+          gh release upload "$RELEASE_TAG" "$RUNNER_TEMP/okf-owasp.zip" --clobber
