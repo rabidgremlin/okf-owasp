@@ -75,7 +75,7 @@ The article shows how to configure a global error handler as part of your applic
 
 The following schema shows the target approach:
 
-![Overview](../assets/Error_Handling_Cheat_Sheet_Overview.png)
+![Overview](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Error_Handling_Cheat_Sheet_Overview.png)
 
 As most recent application topologies are *API based*, we assume in this article that the backend exposes only a REST API and does not contain any user interface content. The application should try and exhaustively cover all possible failure modes and use 5xx errors only to indicate responses to requests that it cannot fulfill, but not provide any content as part of the response that would reveal implementation details. For that, [RFC 7807 - Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc7807) defines a document format.  
 For the error logging operation itself, the [logging cheat sheet](Logging_Cheat_Sheet.md) should be used. This article focuses on the error handling part.

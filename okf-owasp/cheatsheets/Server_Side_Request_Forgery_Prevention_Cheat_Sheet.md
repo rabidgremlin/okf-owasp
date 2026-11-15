@@ -22,7 +22,7 @@ generated:
 
 The objective of the cheat sheet is to provide advice regarding the protection against [Server Side Request Forgery](https://www.acunetix.com/blog/articles/server-side-request-forgery-vulnerability/) (SSRF) attack.
 
-This cheat sheet will focus on the defensive point of view and will not explain how to perform this attack. This [talk](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf) from the security researcher [Orange Tsai](https://twitter.com/orange_8361) as well as this [document](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf) provide techniques on how to perform this kind of attack.
+This cheat sheet will focus on the defensive point of view and will not explain how to perform this attack. This [talk](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf) from the security researcher [Orange Tsai](https://twitter.com/orange_8361) as well as this [document](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf) provide techniques on how to perform this kind of attack.
 
 ## Context
 
@@ -34,7 +34,7 @@ SSRF is an attack vector that abuses an application to interact with the interna
 
 ## Overview of a SSRF common flow
 
-![SSRF Common Flow](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Common_Flow.png)
+![SSRF Common Flow](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Common_Flow.png)
 
 *Notes:*
 
@@ -72,7 +72,7 @@ The first level of protection that comes to mind is [Input validation](Input_Val
 
 Based on that point, the following question comes to mind: *How to perform this input validation?*
 
-As [Orange Tsai](https://twitter.com/orange_8361) shows in his [talk](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf), depending on the programming language used, parsers can be abused. One possible countermeasure is to apply the [allowlist approach](Input_Validation_Cheat_Sheet.md#allowlist-vs-denylist) when input validation is used because, most of the time, the format of the information expected from the user is globally known.
+As [Orange Tsai](https://twitter.com/orange_8361) shows in his [talk](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf), depending on the programming language used, parsers can be abused. One possible countermeasure is to apply the [allowlist approach](Input_Validation_Cheat_Sheet.md#allowlist-vs-denylist) when input validation is used because, most of the time, the format of the information expected from the user is globally known.
 
 The request sent to the internal application will be based on the following information:
 
@@ -81,7 +81,7 @@ The request sent to the internal application will be based on the following info
 - Domain name.
 - URL.
 
-**Note:** Disable the support for the following of the [redirection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Redirections) in your web client in order to prevent the bypass of the input validation described in the section `Exploitation tricks > Bypassing restrictions > Input validation > Unsafe redirect` of this [document](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf).
+**Note:** Disable the support for the following of the [redirection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Redirections) in your web client in order to prevent the bypass of the input validation described in the section `Exploitation tricks > Bypassing restrictions > Input validation > Unsafe redirect` of this [document](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf).
 
 ###### String
 
@@ -132,7 +132,7 @@ After ensuring the validity of the incoming IP address, the second layer of vali
 In the attempt of validate domain names, it is apparent to do a DNS resolution to verify the existence of the domain. In general, it is not a bad idea, yet it opens up the application to attacks depending on the configuration used regarding the DNS servers used for the domain name resolution:
 
 - It can disclose information to external DNS resolvers.
-- It can be used by an attacker to bind a legit domain name to an internal IP address. See the section `Exploitation tricks > Bypassing restrictions > Input validation > DNS pinning` of this [document](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf).
+- It can be used by an attacker to bind a legit domain name to an internal IP address. See the section `Exploitation tricks > Bypassing restrictions > Input validation > DNS pinning` of this [document](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_SSRF_Bible.pdf).
 - An attacker can use it to deliver a malicious payload to the internal DNS resolvers and the API (SDK or third-party) used by the application to handle the DNS communication and then, potentially, trigger a vulnerability in one of these components.
 
 In the context of SSRF, there are two validations to perform:
@@ -261,7 +261,7 @@ if __name__== "__main__":
 
 ###### URL
 
-Do not accept complete URLs from the user because URL are difficult to validate and the parser can be abused depending on the technology used as showcased by the following [talk](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf) of [Orange Tsai](https://twitter.com/orange_8361).
+Do not accept complete URLs from the user because URL are difficult to validate and the parser can be abused depending on the technology used as showcased by the following [talk](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf) of [Orange Tsai](https://twitter.com/orange_8361).
 
 If network related information is really needed then only accept a valid IP address or domain name.
 
@@ -277,7 +277,7 @@ The Firewall component, as a specific device or using the one provided within th
 
 In the schema below, a Firewall component is leveraged to limit the application's access, and in turn, limit the impact of an application vulnerable to SSRF:
 
-![Case 1 for Network layer protection about flows that we want to prevent](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Case1_NetworkLayer_PreventFlow.png)
+![Case 1 for Network layer protection about flows that we want to prevent](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Case1_NetworkLayer_PreventFlow.png)
 
 [Network segregation](https://www.mwrinfosecurity.com/our-thinking/making-the-case-for-network-segregation) (see this set of [implementation advice](https://www.cyber.gov.au/acsc/view-all-content/publications/implementing-network-segmentation-and-segregation) can also be leveraged and **is highly recommended in order to block illegitimate calls directly at network level itself**.
 
@@ -394,7 +394,7 @@ sequenceDiagram
     Note left of VulnerableApplication: Include response<br>from the<br>TargetedApplication
 ```
 
-Draw.io schema XML code for the "[case 1 for network layer protection about flows that we want to prevent](../assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Case1_NetworkLayer_PreventFlow.xml)" schema (printscreen are used to capture PNG image inserted into this cheat sheet).
+Draw.io schema XML code for the "[case 1 for network layer protection about flows that we want to prevent](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Case1_NetworkLayer_PreventFlow.xml)" schema (printscreen are used to capture PNG image inserted into this cheat sheet).
 
 ## References
 

@@ -29,7 +29,7 @@ Because anti-DoS methods cannot be one-step solutions, your developers and appli
 
 **To ensure systems can be resilient and resist a DoS attack, we strongly suggest a thorough analysis on components within your inventory based on functionality, architecture and performance (i.e. application-wise, infrastructure and network related).**
 
-![DDOSFlow](../assets/Denial_of_Service_Cheat_Sheet_FlowDDOS.png)
+![DDOSFlow](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Denial_of_Service_Cheat_Sheet_FlowDDOS.png)
 
 This DoS system inventory should look for potential places where DoS attacks can cause problems and highlight any single points of system failures, which can range from programming related errors to resource exhaustion. It should give you a clear picture of what issues are at stake (e.g. bottlenecks, etc.). **To resolve problems, a solid understanding of your environment is essential to develop suitable defense mechanisms**. These could be aligned with:
 

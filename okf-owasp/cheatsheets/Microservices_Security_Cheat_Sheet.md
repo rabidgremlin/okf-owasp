@@ -45,7 +45,7 @@ With an mTLS approach, each microservice can legitimately identify who it talks 
 #### Token-based
 
 The token-based approach works at the application layer. A token is a container that may contain the caller ID (microservice ID) and its permissions (scopes). The caller microservice can obtain a signed token by invoking a special security token service using its own service ID and password and then attaches it to every outgoing request, e.g., via HTTP headers. The called microservice can extract the token and validate it online or offline.
-![Signed ID propagation](../assets/Token_validation.png)
+![Signed ID propagation](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Token_validation.png)
 
 Choose token validation based on the required revocation response time, token lifetime, and availability requirements:
 
@@ -67,7 +67,7 @@ Logging services in microservice-based systems aim to meet the principles of acc
 - Each microservice writes a log message to a local file using standard output (via stdout, stderr).
 - The logging agent periodically pulls log messages and sends (publishes) them to the message broker (e.g., NATS, Apache Kafka).
 - The central logging service subscribes to messages in the message broker, receives them, and processes them.
-![Logging pattern](../assets/ms_logging_pattern.png)
+![Logging pattern](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/ms_logging_pattern.png)
 
 High-level recommendations to logging subsystem architecture with its rationales are listed below.
 

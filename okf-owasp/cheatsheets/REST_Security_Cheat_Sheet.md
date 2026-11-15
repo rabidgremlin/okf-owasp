@@ -97,7 +97,7 @@ API keys can reduce the impact of denial-of-service attacks. However, when they 
 - Reject all requests not matching the allowlist with HTTP response code `405 Method not allowed`.
 - Make sure the caller is authorized to use the incoming HTTP method on the resource collection, action, and record
 
-In Java EE in particular, this can be difficult to implement properly. See [Bypassing Web Authentication and Authorization with HTTP Verb Tampering](../assets/REST_Security_Cheat_Sheet_Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf) for an explanation of this common misconfiguration.
+In Java EE in particular, this can be difficult to implement properly. See [Bypassing Web Authentication and Authorization with HTTP Verb Tampering](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/REST_Security_Cheat_Sheet_Bypassing_VBAAC_with_HTTP_Verb_Tampering.pdf) for an explanation of this common misconfiguration.
 
 ## Preventing Out-of-Order API Execution
 

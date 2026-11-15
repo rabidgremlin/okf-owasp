@@ -522,7 +522,7 @@ To achieve this task, you could use the following XSL stylesheet:
 
 Example of the rendering:
 
-![RenderingExample](../assets/Authorization_Testing_Automation_AutomationRendering.png)
+![RenderingExample](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Authorization_Testing_Automation_AutomationRendering.png)
 
 ## Sources of the prototype
 

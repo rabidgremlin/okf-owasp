@@ -36,7 +36,7 @@ Choose by the PDP's documented output semantics and the data store's supported i
 
 The PEP retrieves a bounded candidate set and evaluates each item, individually or in a batch.
 
-![PDP as a filter](../assets/PDP_as_filter.png)
+![PDP as a filter](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/PDP_as_filter.png)
 
 Use this for small sets when a list or filter interface is unavailable. Keep candidate data inside the trusted service until checks complete; exclude denied and unresolved items. Apply the same restriction to counts, exports, and other outputs that could reveal protected data.
 
@@ -44,7 +44,7 @@ Use this for small sets when a list or filter interface is unavailable. Keep can
 
 The PDP returns identifiers that the subject may access for a particular action. The application restricts its data retrieval to those identifiers and its own tenant and business predicates.
 
-![Authorized data set](../assets/Authorized_data_set.png)
+![Authorized data set](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Authorized_data_set.png)
 
 Treat the result as complete only when the API guarantees completion. OpenFGA documents deadline and result-count limits for ListObjects; do not assume every implementation provides a pagination cursor or unlimited streaming. A truncated authorized subset can be displayed as partial when the API guarantees each returned item is permitted, but cannot establish the complete authorized set. Never interpret an empty or incomplete list as permission to remove the restriction. Recheck authorization for subsequent operations or when the relevant state changes.
 
@@ -52,7 +52,7 @@ Treat the result as complete only when the API guarantees completion. OpenFGA do
 
 The PDP returns a predicate or query plan that the data layer enforces while retrieving resources.
 
-![Authorization filter](../assets/Authorization_filter.png)
+![Authorization filter](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Authorization_filter.png)
 
 Use a maintained adapter for the exact PDP and data store. [Cerbos PlanResources](https://docs.cerbos.dev/cerbos/latest/api/#resources-query-plan) distinguishes always-allowed, always-denied, and conditional plans; [OPA's Compile API](https://www.openpolicyagent.org/docs/rest-api#compile-api) supports partial evaluation. Capabilities depend on the implementation and policy language, not a universal restriction on ReBAC or other model families.
 

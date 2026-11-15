@@ -45,7 +45,7 @@ For input data, select among these approaches using the source's consistency gua
 
 The PDP retrieves required attributes from an authoritative PIP.
 
-![On-demand data lookup](../assets/On_demand_data_pull.png)
+![On-demand data lookup](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/On_demand_data_pull.png)
 
 Use this when the source can satisfy the decision's availability and freshness requirements. A lookup does not guarantee current data if the source, replica, or intermediate cache is stale. Deny affected operations when a required attribute cannot be obtained reliably.
 
@@ -53,7 +53,7 @@ Use this when the source can satisfy the decision's availability and freshness r
 
 Updates reach a PDP's local data store before evaluation.
 
-![Out-of-band data delivery](../assets/Out_of_band_data_push.png)
+![Out-of-band data delivery](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Out_of_band_data_push.png)
 
 This removes the PIP from the immediate request path but creates a revocation delay. Monitor synchronization progress and handle missed, repeated, and reordered updates. Do not describe local availability as a freshness guarantee.
 
@@ -61,7 +61,7 @@ This removes the PIP from the immediate request path but creates a revocation de
 
 The PEP collects attributes and includes them in its decision request.
 
-![Request-time data injection](../assets/Request_time_data_injection.png)
+![Request-time data injection](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Request_time_data_injection.png)
 
 The [AuthZEN security considerations](https://openid.net/specs/authorization-api-1_0.html#section-11) address PEP authentication and trust. An authenticated PEP must still derive user identity, roles, ownership, and tenant membership from trusted sources; copying values from an end user request does not make them authoritative. Validate resource identifiers against the actual target and distinguish user-supplied context from verified attributes.
 
@@ -69,7 +69,7 @@ The [AuthZEN security considerations](https://openid.net/specs/authorization-api
 
 Stable data is packaged with the PDP or policy release.
 
-![Embedded data](../assets/Embedded_data.png)
+![Embedded data](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Embedded_data.png)
 
 Use this only when changing the data through a deployment meets its freshness requirement. Avoid embedding mutable account status or revocation data in releases that cannot update promptly.
 

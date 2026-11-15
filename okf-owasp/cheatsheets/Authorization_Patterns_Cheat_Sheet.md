@@ -32,7 +32,7 @@ Keep enforcement close to the protected resource so it can check the requested a
 
 The service implements both decision and enforcement logic, using a framework's authorization facilities where possible.
 
-![Decentralized service-level authorization](../assets/Decentralized_Service_Level_Authorization.png)
+![Decentralized service-level authorization](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Decentralized_Service_Level_Authorization.png)
 
 This can suit a small application with a limited policy surface. Centralize checks within the application's authorization layer and test every protected entry point. Scattered conditional checks make omissions and inconsistent policies harder to detect; changing these rules requires deploying application code. Code-based policies are not inherently fail-open.
 
@@ -40,7 +40,7 @@ This can suit a small application with a limited policy surface. Centralize chec
 
 The service remains the PEP but asks a PDP to evaluate policies managed independently of business code. The PDP may be embedded, local, or remote; central policy ownership does not require a single central runtime.
 
-![Centralized service-level authorization](../assets/Centralized_Service_Level_Authorization.png)
+![Centralized service-level authorization](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Centralized_Service_Level_Authorization.png)
 
 Use this separation when several services need consistent rules and a shared review process. Supply authenticated subject context and authoritative resource attributes, enforce the returned decision before accessing the resource, and deny the operation if no valid decision is available. See [Policy and Data Distribution](Authorization_Policy_And_Data_Distribution_Cheat_Sheet.md) for keeping inputs current and [Decisions and Output Handling](Authorization_Decisions_And_Output_Handling_Cheat_Sheet.md) for enforcing results.
 
@@ -48,7 +48,7 @@ Use this separation when several services need consistent rules and a shared rev
 
 A gateway can enforce coarse access rules before forwarding a request. A service-local proxy can perform similar checks on calls to one service. [Envoy's external authorization filter](https://www.envoyproxy.io/docs/envoy/v1.36.9/configuration/http/http_filters/ext_authz_filter) illustrates delegation to a PDP and documents how routing changes after authorization can invalidate an earlier check.
 
-![Edge-level authorization](../assets/Edge_Level_Authorization_Classic.png)
+![Edge-level authorization](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Edge_Level_Authorization_Classic.png)
 
 Treat complete traffic coverage as a deployment requirement, not an automatic property of a gateway. Authenticate permitted callers, restrict direct access to services, and cover internal calls and alternate endpoints. Keep object-level and business-specific checks in the service when the proxy lacks the necessary context. Reevaluate authorization if the effective resource or action changes after a check.
 
@@ -56,7 +56,7 @@ Treat complete traffic coverage as a deployment requirement, not an automatic pr
 
 A gateway may attach signed context describing an authenticated subject or an authorization decision for downstream use.
 
-![Gateway authorization with propagated context](../assets/Edge_Level_Authorization_Modern.png)
+![Gateway authorization with propagated context](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Edge_Level_Authorization_Modern.png)
 
 Downstream services must validate the trusted issuer, integrity, audience, expiry, and the context's applicability to the actual request. Reject direct calls that lack the required context. Strip client-supplied copies of trusted headers before populating them. A signature alone neither prevents bypass nor authorizes a different resource, tenant, or action; follow the [JWT validation guidance](https://www.rfc-editor.org/rfc/rfc8725#section-3) and retain service-level enforcement.
 

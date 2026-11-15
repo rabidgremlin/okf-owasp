@@ -59,7 +59,7 @@ Review the following APIs for untrusted input:
 
 ### Java
 
-For historical research on Java deserialization and defensive allowlisting, see [Java Deserialization Attacks — German OWASP Day 2016](../assets/Deserialization_Cheat_Sheet_GOD16Deserialization.pdf).
+For historical research on Java deserialization and defensive allowlisting, see [Java Deserialization Attacks — German OWASP Day 2016](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Deserialization_Cheat_Sheet_GOD16Deserialization.pdf).
 
 The following techniques can reduce risks when using [Java's Serializable format](https://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html).
 

@@ -158,7 +158,7 @@ Lastly, if you want to validate whether the pinning is successful, please follow
 
 .Net pinning can be achieved by using [`ServicePointManager`](https://docs.microsoft.com/en-us/dotnet/api/system.net.servicepointmanager?view=netframework-4.7.2). An example can be found at the [OWASP MSTG](https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05g-Testing-Network-Communication.md#xamarin-applications).
 
-Download the [.Net sample program](../assets/Pinning_Cheat_Sheet_Certificate_DotNetSample.zip).
+Download the [.Net sample program](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Pinning_Cheat_Sheet_Certificate_DotNetSample.zip).
 
 ### OpenSSL
 
@@ -169,7 +169,7 @@ Though OpenSSL performs the X509 checks, you must fail the connection and tear d
 1. You must call `SSL_get_verify_result` and verify the return code is `X509_V_OK`;
 2. You must call `SSL_get_peer_certificate` and verify the certificate is **non-NULL**.
 
-Download: [OpenSSL sample program](../assets/Pinning_Cheat_Sheet_Certificate_OpenSSLSample.zip).
+Download: [OpenSSL sample program](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Pinning_Cheat_Sheet_Certificate_OpenSSLSample.zip).
 
 ### Electron
 

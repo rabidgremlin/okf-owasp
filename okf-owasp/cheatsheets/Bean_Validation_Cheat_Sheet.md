@@ -28,11 +28,11 @@ One advantage of this approach is that the validation constraints and the corres
 
 ### Typical Validation
 
-![Typical](../assets/Bean_Validation_Cheat_Sheet_Typical.png)
+![Typical](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Bean_Validation_Cheat_Sheet_Typical.png)
 
 ### Bean Validation
 
-![JSR](../assets/Bean_Validation_Cheat_Sheet_JSR.png)
+![JSR](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Bean_Validation_Cheat_Sheet_JSR.png)
 
 ## Setup
 

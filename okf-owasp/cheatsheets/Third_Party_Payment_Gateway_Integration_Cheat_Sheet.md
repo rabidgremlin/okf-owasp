@@ -45,7 +45,7 @@ A typical third-party payment flow consists of five core steps:
 
 The following sequence diagram explains the steps above.
 
-![Payment integration sequence flow](../assets/third_party_integration_workflow.png)
+![Payment integration sequence flow](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/third_party_integration_workflow.png)
 
 ---
 

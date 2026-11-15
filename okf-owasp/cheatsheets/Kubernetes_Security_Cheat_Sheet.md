@@ -734,7 +734,7 @@ Note that manually triaging security incidents and policy violations is time con
 
 For example, a deployment containing a vulnerability with severity score of 7 or greater should be moved up in remediation priority if that deployment contains privileged containers and is open to the Internet but moved down if it’s in a test environment and supporting a non-critical app.
 
-![Kubernetes Architecture](../assets/Kubernetes_Architecture.png)
+![Kubernetes Architecture](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Kubernetes_Architecture.png)
 
 ## References
 

@@ -137,7 +137,7 @@ An example of unique ID format can be **ABUSE_CASE_001**.
 
 The following figure provides an overview of the chaining of the different steps involved (from left to right):
 
-![Overview Schema](../assets/Abuse_Case_Cheat_Sheet_Overview.png)
+![Overview Schema](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Abuse_Case_Cheat_Sheet_Overview.png)
 
 ### Proposal
 
@@ -466,7 +466,7 @@ All figures were created using <https://www.draw.io/> site and exported (as PNG 
 
 All XML descriptor files for each schema are available below (using XML description, modification of the schema is possible using DRAW.IO site):
 
-[Schemas descriptors archive](../assets/Abuse_Case_Cheat_Sheet_SchemaBundle.zip)
+[Schemas descriptors archive](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Abuse_Case_Cheat_Sheet_SchemaBundle.zip)
 
 ## References
 

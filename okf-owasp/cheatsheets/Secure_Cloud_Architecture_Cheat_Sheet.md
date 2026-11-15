@@ -119,7 +119,7 @@ Consider the simple architecture diagram below. A VPC will house all of the comp
 2. This gateway connects to a load balancer or a web server in a public subnet. Both components provide public facing functions and are secured accordingly.
 3. These components then interact with their appropriate backend counterparts, a database or backend server, contained in a private VPC. This connections are more limited, preventing extraneous access to the possibly "soft" backend systems.
 
-![VPC Diagram](../assets/Secure_Cloud_Architecture_VPC.png)
+![VPC Diagram](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Secure_Cloud_Architecture_VPC.png)
 
 *Note: This diagram intentionally skips routing and IAM elements for subnet interfacing, for simplicity and to be service provider agnostic.*
 
@@ -131,7 +131,7 @@ Trust boundaries are connections between components within a system where a trus
 
 As an example, consider the architecture below. An API gateway connects to a compute instance (ephemeral or persistent), which then accesses a persistent storage resource. Separately, there exists a server which can verify the authentication, authorization and/or identity of the caller. This is a generic representation of an OAuth, IAM or directory system, which controls access to these resources. Additionally, there exists an Ephemeral IAM server which controls access for the stored resources (using an approach like the [IAM Access](#iam-access) section above). As shown by the dotted lines, trust boundaries exist between each compute component, the API gateway and the auth/identity server, even though many or all of the elements could be in the same application.
 
-![Trust Boundaries](../assets/Secure_Cloud_Architecture_Trust_Boundaries_1.png)
+![Trust Boundaries](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Secure_Cloud_Architecture_Trust_Boundaries_1.png)
 
 ### Exploring Different Levels of Trust
 
@@ -145,7 +145,7 @@ Notice that both the API gateway and compute components call out to the auth/ide
 
 Also note the lack of trust between the auth/identity server and ephemeral IAM server and each component. While not displayed in the diagram, this would have additional impacts, like more rigorous checks before authentication, and possibly more overhead dedicated to cryptographic operations.
 
-![No Trust Across Boundaries](../assets/Secure_Cloud_Architecture_Trust_Boundaries_2.png)
+![No Trust Across Boundaries](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Secure_Cloud_Architecture_Trust_Boundaries_2.png)
 
 This could be a necessary approach for applications found in financial, military or critical infrastructure systems. However, security must be careful when advocating for this model, as it will have significant performance and maintenance drawbacks.
 
@@ -159,7 +159,7 @@ This could be a necessary approach for applications found in financial, military
 
 Next, consider the opposite approach, where everything is trusted. In this instance, the "dangerous" user input is trusted and essentially handed directly to a high criticality business component. The auth/identity resource is not used at all. In this instance, there is higher likelihood of a successful attack against the system, because there are no controls in place to prevent it. Additionally, this setup could be considered wasteful, as both the auth/identity and ephemeral IAM servers are not necessarily performing their intended function. *(These could be shared corporate resources that aren't being used to their full potential).*
 
-![Complete Trust Across Boundaries](../assets/Secure_Cloud_Architecture_Trust_Boundaries_3.png)
+![Complete Trust Across Boundaries](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Secure_Cloud_Architecture_Trust_Boundaries_3.png)
 
 This is an unlikely architecture for all but the simplest and lowest risk applications. **Do not use this trust boundary configuration** unless there is no sensitive content to protect or efficiency is the only metric for success. Trusting user input is never recommended, even in low risk applications.
 
@@ -175,7 +175,7 @@ Use risk analysis to place and configure access controls, rather than to omit ve
 
 In this example, the compute instance must authenticate the calling gateway, validate propagated user context, and enforce permissions for the requested operation. Prevent direct access that bypasses gateway checks. The instance uses its own least-privileged identity to access storage; an authenticated user does not automatically authorize every storage operation.
 
-![Some Trust Across Boundaries](../assets/Secure_Cloud_Architecture_Trust_Boundaries_4.png)
+![Some Trust Across Boundaries](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Secure_Cloud_Architecture_Trust_Boundaries_4.png)
 
 By nature, this approach limits the pros and cons of both previous examples. This model will likely be used for most applications, unless the benefits of the above examples are necessary to meet business requirements.
 
@@ -328,7 +328,7 @@ Another way to describe this shared responsibility model more generically is by 
 
 AWS provides an excellent example of this difference in management, identifying where some of their different products fall onto different points in the spectrum.
 
-![Shared Responsibility Model](../assets/Secure_Cloud_Architecture_Shared_Responsibility_Model.png)
+![Shared Responsibility Model](https://raw.githubusercontent.com/OWASP/CheatSheetSeries/e5525cc605ad29bd686cdc74c21556a8c9be38d4/assets/Secure_Cloud_Architecture_Shared_Responsibility_Model.png)
 
 *Note: It is hard to indicate exactly which offerings are considered what type of service (Ex: IaaS vs PaaS). Developers should look to understand the model which applies to the specific tool they are using.*
 
