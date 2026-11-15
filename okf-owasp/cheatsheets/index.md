@@ -1,6 +1,6 @@
 # Index
 
-Directory: `cheatsheets/`
+This folder contains OWASP cheat sheets covering secure development, authentication, authorization, data protection, infrastructure, and AI security, including historical and deprecated guidance.
 
 ## Concepts
 

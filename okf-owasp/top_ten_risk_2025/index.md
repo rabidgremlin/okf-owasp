@@ -1,6 +1,6 @@
 # Index
 
-Directory: `top_ten_risk_2025/`
+This folder contains the ten OWASP Top Ten 2025 application security risks, with explanations, attack scenarios, and prevention guidance.
 
 ## Concepts
 
