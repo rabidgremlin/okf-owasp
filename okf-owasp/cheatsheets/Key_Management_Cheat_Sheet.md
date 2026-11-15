@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Key Management Cheat Sheet"
+description: "Managing cryptographic keys securely throughout generation, storage, use, and retirement."
+tags:
+  - cheat-sheet
+  - key-management
+  - cryptography
+---
+
 # Key Management Cheat Sheet
 
 ## Introduction

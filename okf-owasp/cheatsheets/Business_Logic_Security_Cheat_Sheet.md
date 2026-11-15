@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Business Logic Security Cheat Sheet"
+description: "Preventing workflow abuse, price manipulation, and race conditions in business logic."
+tags:
+  - cheat-sheet
+  - business-logic
+  - race-conditions
+  - authorization
+---
+
 # Business Logic Security Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Input Validation Cheat Sheet"
+description: "Validating structured and unstructured input with allowlists, safe parsing, and semantic checks."
+tags:
+  - cheat-sheet
+  - input-validation
+  - allowlisting
+  - parsing
+---
+
 # Input Validation Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Web Cache Security Cheat Sheet"
+description: "Preventing cache poisoning and data exposure with safe cache keys and response policies."
+tags:
+  - cheat-sheet
+  - caching
+  - cache-poisoning
+  - data-protection
+---
+
 # Web Cache Security Cheat Sheet
 
 ## Introduction

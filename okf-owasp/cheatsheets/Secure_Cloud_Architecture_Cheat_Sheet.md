@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Cloud Architecture Security Cheat Sheet"
+description: "Designing secure cloud networks, storage, components, and trust boundaries."
+tags:
+  - cheat-sheet
+  - cloud-security
+  - architecture
+  - network-security
+---
+
 # Cloud Architecture Security Cheat Sheet
 
 ## Introduction
@@ -18,8 +29,8 @@ Therefore, enterprises must perform risk assessments, threat modeling activities
 
 This is all necessary to properly scope the security of an architecture. However, these are subjects that can/should be discussed in greater detail. Use the resources link below to investigate further as part of a healthy secure architecture conversation.
 
-- [Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
-- [Attack Surface Analysis Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.html)
+- [Threat Modeling Cheat Sheet](Threat_Modeling_Cheat_Sheet.md)
+- [Attack Surface Analysis Cheat Sheet](Attack_Surface_Analysis_Cheat_Sheet.md)
 - [CISA Cyber Risk Assessment](https://www.cisa.gov/sites/default/files/2023-02/22_1201_safecom_guide_to_cybersecurity_risk_assessment_508-r1.pdf)
 
 ## Public and Private Components

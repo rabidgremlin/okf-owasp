@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Docker Security Cheat Sheet"
+description: "Hardening Docker containers, daemon access, runtime privileges, and host configuration."
+tags:
+  - cheat-sheet
+  - docker
+  - containers
+  - hardening
+---
+
 # Docker Security Cheat Sheet
 
 ## Introduction

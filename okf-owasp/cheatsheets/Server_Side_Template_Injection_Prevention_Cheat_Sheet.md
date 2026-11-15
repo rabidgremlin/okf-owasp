@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Server-Side Template Injection Prevention Cheat Sheet"
+description: "Preventing template injection by keeping template code separate from untrusted data."
+tags:
+  - cheat-sheet
+  - ssti
+  - templates
+  - injection
+---
+
 # Server-Side Template Injection Prevention Cheat Sheet
 
 ## Introduction

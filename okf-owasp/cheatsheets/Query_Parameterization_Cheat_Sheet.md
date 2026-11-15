@@ -1,8 +1,19 @@
+---
+type: Cheat Sheet
+title: "Query Parameterization Cheat Sheet"
+description: "Separating SQL query structure from user data with parameterized queries and prepared statements."
+tags:
+  - cheat-sheet
+  - sql
+  - parameterization
+  - injection
+---
+
 # Query Parameterization Cheat Sheet
 
 ## Introduction
 
-[SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection) is one of the most dangerous web vulnerabilities. As of the [OWASP Top 10:2025](https://owasp.org/Top10/2025/A05_2025-Injection/), it is categorized under A05:2025-Injection.
+[SQL Injection](https://owasp.org/www-community/attacks/SQL_Injection) is one of the most dangerous web vulnerabilities. As of the [OWASP Top 10:2025](../top_ten_risk_2025/A05_2025-Injection.md), it is categorized under A05:2025-Injection.
 
 It represents a serious threat because SQL Injection allows evil attacker code to change the structure of a web application's SQL statement in a way that can steal data, modify data, or potentially facilitate command injection to the underlying OS.
 

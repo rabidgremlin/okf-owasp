@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Mass Assignment Cheat Sheet"
+description: "Preventing mass assignment through explicit field allowlists and dedicated data transfer objects."
+tags:
+  - cheat-sheet
+  - mass-assignment
+  - input-validation
+---
+
 # Mass Assignment Cheat Sheet
 
 ## Introduction

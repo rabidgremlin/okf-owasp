@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "HTML5 Security Cheat Sheet"
+description: "Using HTML5 communication, storage, and browser features securely."
+tags:
+  - cheat-sheet
+  - html5
+  - browser-security
+  - web-security
+---
+
 # HTML5 Security Cheat Sheet
 
 ## Introduction

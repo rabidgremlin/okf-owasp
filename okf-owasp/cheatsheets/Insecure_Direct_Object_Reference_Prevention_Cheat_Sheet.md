@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Insecure Direct Object Reference Prevention Cheat Sheet"
+description: "Preventing insecure direct object references through server-side authorization checks."
+tags:
+  - cheat-sheet
+  - idor
+  - authorization
+  - access-control
+---
+
 # Insecure Direct Object Reference Prevention Cheat Sheet
 
 ## Introduction

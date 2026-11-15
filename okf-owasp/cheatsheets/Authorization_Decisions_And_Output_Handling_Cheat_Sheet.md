@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Authorization Decisions and Output Handling Cheat Sheet"
+description: "Enforcing authorization decisions for individual operations, collections, and query results."
+tags:
+  - cheat-sheet
+  - authorization
+  - access-control
+  - data-filtering
+---
+
 # Authorization Decisions and Output Handling Cheat Sheet
 
 ## Introduction

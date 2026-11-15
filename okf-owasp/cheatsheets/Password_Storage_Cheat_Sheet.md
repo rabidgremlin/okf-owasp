@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Password Storage Cheat Sheet"
+description: "Storing passwords safely with modern hashing algorithms, salts, and appropriate work factors."
+tags:
+  - cheat-sheet
+  - passwords
+  - hashing
+  - cryptography
+---
+
 # Password Storage Cheat Sheet
 
 ## Introduction

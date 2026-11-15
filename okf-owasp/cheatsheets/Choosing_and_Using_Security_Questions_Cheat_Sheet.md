@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Choosing and Using Security Questions Cheat Sheet"
+description: "Explaining security question weaknesses and considerations for legacy account recovery."
+tags:
+  - cheat-sheet
+  - authentication
+  - account-recovery
+  - security-questions
+---
+
 # Choosing and Using Security Questions Cheat Sheet
 
 ## Introduction

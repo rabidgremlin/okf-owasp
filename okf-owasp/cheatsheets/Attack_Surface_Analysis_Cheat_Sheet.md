@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Attack Surface Analysis Cheat Sheet"
+description: "Identifying, measuring, and reducing application attack surfaces during development."
+tags:
+  - cheat-sheet
+  - attack-surface
+  - risk-assessment
+---
+
 # Attack Surface Analysis Cheat Sheet
 
 ## What is Attack Surface Analysis and Why is it Important

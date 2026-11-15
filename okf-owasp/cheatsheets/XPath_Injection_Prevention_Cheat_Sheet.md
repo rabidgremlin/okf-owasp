@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "XPath Injection Prevention Cheat Sheet"
+description: "Preventing XPath injection with fixed expressions and bound input variables."
+tags:
+  - cheat-sheet
+  - xpath
+  - xml
+  - injection
+---
+
 # XPath Injection Prevention Cheat Sheet
 
 ## Introduction

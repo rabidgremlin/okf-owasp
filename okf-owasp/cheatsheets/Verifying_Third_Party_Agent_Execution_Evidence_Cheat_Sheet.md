@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Verifying Third-Party Agent Execution Evidence Cheat Sheet"
+description: "Assessing third-party agent execution records for trustworthy claims and verifiable evidence."
+tags:
+  - cheat-sheet
+  - ai-agents
+  - attestation
+  - evidence-verification
+---
+
 # Verifying Third-Party Agent Execution Evidence Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Deserialization Cheat Sheet"
+description: "Safely handling untrusted serialized data across common languages and frameworks."
+tags:
+  - cheat-sheet
+  - deserialization
+  - input-validation
+---
+
 # Deserialization Cheat Sheet
 
 ## Introduction

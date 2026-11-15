@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "FastAPI Security Cheat Sheet"
+description: "Securing FastAPI authentication dependencies, data models, and deployment configuration."
+tags:
+  - cheat-sheet
+  - fastapi
+  - python
+  - api-security
+---
+
 # FastAPI Security Cheat Sheet
 
 ## Introduction
@@ -62,16 +73,16 @@ When using JSON Web Tokens (JWTs), developers are responsible for token verifica
 
 - **Validate Required Claims:** Verify the signature and require `exp` (expiration), `iss` (issuer), and `aud` (audience) for authentication tokens. In PyJWT, use `options={"require": ["exp", "iss", "aud"]}` and supply the expected `issuer` and `audience`. Requiring a claim only checks its presence; keep the corresponding verification enabled. Validate `nbf` (not before) when present, and require it if your token profile calls for it.
 - **Explicit Algorithms:** Configure the expected algorithm during decoding, for example `algorithms=["HS256"]` for tokens issued with that algorithm. Do not derive the accepted algorithms from the token's header.
-- **Revocation and Replay:** Expiration bounds a token's lifetime. Checking a revocation blocklist rejects revoked tokens, but a stolen, still-active bearer token remains reusable. See the [JWT replay-protection guidance](../cheatsheets/JSON_Web_Token_Cheat_Sheet.md#replay-protection) for controls beyond expiration and revocation.
+- **Revocation and Replay:** Expiration bounds a token's lifetime. Checking a revocation blocklist rejects revoked tokens, but a stolen, still-active bearer token remains reusable. See the [JWT replay-protection guidance](JSON_Web_Token_Cheat_Sheet.md#replay-protection) for controls beyond expiration and revocation.
 
 ### Cookie-Stored Refresh Tokens
 
 - **Cookie Attributes:** If you store refresh tokens in cookies, set `HttpOnly`, `Secure`, and `SameSite=Lax` or `Strict` where compatible with your authentication flow. `HttpOnly` prevents JavaScript from reading the cookie; it does not prevent injected scripts from making authenticated requests.
-- **CSRF Mitigations:** Browsers attach cookies automatically, introducing Cross-Site Request Forgery (CSRF) risk. Protect refresh and other state-changing endpoints with the defenses in the [CSRF Prevention Cheat Sheet](../cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md), such as validated CSRF tokens. Treat `SameSite` as defense in depth.
+- **CSRF Mitigations:** Browsers attach cookies automatically, introducing Cross-Site Request Forgery (CSRF) risk. Protect refresh and other state-changing endpoints with the defenses in the [CSRF Prevention Cheat Sheet](Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md), such as validated CSRF tokens. Treat `SameSite` as defense in depth.
 
 ### Signing Key Management
 
-Never hardcode signing secrets or provide a default development key in production. Supply keys from deployment-managed secret storage; prefer a mounted secret file or retrieval from a secret manager, and use environment variables only when safer injection methods are unavailable. Pydantic Settings can read deployment-supplied configuration. Keep local `.env` files containing secrets out of source control. Follow the [Secrets Management Cheat Sheet](../cheatsheets/Secrets_Management_Cheat_Sheet.md) for provisioning and rotation.
+Never hardcode signing secrets or provide a default development key in production. Supply keys from deployment-managed secret storage; prefer a mounted secret file or retrieval from a secret manager, and use environment variables only when safer injection methods are unavailable. Pydantic Settings can read deployment-supplied configuration. Keep local `.env` files containing secrets out of source control. Follow the [Secrets Management Cheat Sheet](Secrets_Management_Cheat_Sheet.md) for provisioning and rotation.
 
 ## Pydantic Validation and Input Hardening
 
@@ -92,7 +103,7 @@ class UserCreate(BaseModel):
 
 ### Prevent Mass Assignment
 
-Use separate, restricted input schemas (`UserCreate`, `UserUpdate`) that exclude server-controlled fields like `is_admin` or `id`. Persist only validated, allowed fields, not the raw request dictionary. `extra="forbid"` does not prevent clients from setting a sensitive field that you declared in the input schema. See the [Mass Assignment Cheat Sheet](../cheatsheets/Mass_Assignment_Cheat_Sheet.md).
+Use separate, restricted input schemas (`UserCreate`, `UserUpdate`) that exclude server-controlled fields like `is_admin` or `id`. Persist only validated, allowed fields, not the raw request dictionary. `extra="forbid"` does not prevent clients from setting a sensitive field that you declared in the input schema. See the [Mass Assignment Cheat Sheet](Mass_Assignment_Cheat_Sheet.md).
 
 ### Prevent Sensitive Data Exposure
 
@@ -114,7 +125,7 @@ Pydantic can convert input values to the declared types, such as `"123"` to `123
 
 ### Injection Countermeasure
 
-Input validation does not prevent SQL injection. Use parameterized queries, including through Object-Relational Mapper (ORM) APIs that bind parameters. Never build raw SQL queries using string formatting with user input. See the [SQL Injection Prevention Cheat Sheet](../cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md).
+Input validation does not prevent SQL injection. Use parameterized queries, including through Object-Relational Mapper (ORM) APIs that bind parameters. Never build raw SQL queries using string formatting with user input. See the [SQL Injection Prevention Cheat Sheet](SQL_Injection_Prevention_Cheat_Sheet.md).
 
 ## Cross-Origin Resource Sharing (CORS) Configuration
 
@@ -124,7 +135,7 @@ Incorrect CORS settings can expose private API responses to untrusted websites i
 
 - **Explicit Origins:** When using `allow_credentials=True`, explicitly list trusted origins in `allow_origins`. Do not combine credentialed requests with `allow_origins=["*"]`.
 - **Restrict Headers and Methods:** Limit `allow_methods` and `allow_headers` to only the verbs and headers your client application uses.
-- For complete CORS design patterns, refer to the [OWASP HTML5 Security Cheat Sheet](../cheatsheets/HTML5_Security_Cheat_Sheet.md).
+- For complete CORS design patterns, refer to the [OWASP HTML5 Security Cheat Sheet](HTML5_Security_Cheat_Sheet.md).
 
 ## OpenAPI and Swagger UI Exposure
 
@@ -158,7 +169,7 @@ FastAPI parses multipart uploads into `UploadFile` objects, which spool larger f
 ### Upload Protections
 
 - **Limit Payloads Before Parsing:** Set a request-body limit at the reverse proxy or gateway, for example Nginx's [`client_max_body_size`](https://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size). Ensure clients cannot bypass that layer. FastAPI [parses the form before running dependencies](https://github.com/fastapi/fastapi/blob/28a206107302ee20ce6a9a876d05a258c1c8d328/fastapi/routing.py#L438-L502); checking `UploadFile.size` in a dependency or endpoint does not protect against the resources already consumed during parsing.
-- **Treat Metadata as Untrusted:** Do not use `UploadFile.filename` directly as a storage path or trust `content_type` as proof of file type. Apply the filename, content-validation, and storage controls in the [File Upload Cheat Sheet](../cheatsheets/File_Upload_Cheat_Sheet.md).
+- **Treat Metadata as Untrusted:** Do not use `UploadFile.filename` directly as a storage path or trust `content_type` as proof of file type. Apply the filename, content-validation, and storage controls in the [File Upload Cheat Sheet](File_Upload_Cheat_Sheet.md).
 
 ## Rate Limiting
 

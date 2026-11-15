@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Secure AI/ML Model Ops Cheat Sheet"
+description: "Protecting AI model development, deployment, and operations against poisoning, theft, and abuse."
+tags:
+  - cheat-sheet
+  - mlops
+  - ai-security
+  - model-security
+---
+
 # Secure AI/ML Model Ops Cheat Sheet
 
 ## Introduction

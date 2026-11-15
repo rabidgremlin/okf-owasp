@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Node.js Docker Cheat Sheet"
+description: "Building secure Node.js container images with controlled dependencies and reduced privileges."
+tags:
+  - cheat-sheet
+  - nodejs
+  - docker
+  - containers
+---
+
 # Node.js Docker Cheat Sheet
 
 The following cheatsheet provides production-grade guidelines for building optimized and [secure Node.js Docker](https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/). You’ll find it helpful regardless of the Node.js application you aim to build. This article will be helpful for you if:
@@ -273,7 +284,7 @@ Admittedly, this is more of a generic web application concern than Dockerfile re
 
 ## 7) Find and fix security vulnerabilities in your Node.js docker image
 
-See [Docker Security Cheat Sheet - Use static analysis tools](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html#rule-9-integrate-container-scanning-tools-into-your-cicd-pipeline)
+See [Docker Security Cheat Sheet - Use static analysis tools](Docker_Security_Cheat_Sheet.md#rule-9-integrate-container-scanning-tools-into-your-cicd-pipeline)
 
 ## 8) Use multi-stage builds
 

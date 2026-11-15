@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Webhook Security Cheat Sheet"
+description: "Authenticating webhook deliveries and protecting publishers and subscribers against replay and abuse."
+tags:
+  - cheat-sheet
+  - webhooks
+  - signatures
+  - replay-prevention
+---
+
 # Webhook Security Cheat Sheet
 
 ## Introduction

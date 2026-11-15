@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Subdomain Takeover Prevention Cheat Sheet"
+description: "Detecting and preventing takeover risks from dangling DNS records and abandoned services."
+tags:
+  - cheat-sheet
+  - dns
+  - subdomain-takeover
+  - cloud-security
+---
+
 # Subdomain Takeover Prevention Cheat Sheet
 
 ## Introduction

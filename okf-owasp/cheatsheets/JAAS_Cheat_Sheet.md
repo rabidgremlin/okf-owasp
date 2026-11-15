@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "JAAS Cheat Sheet"
+description: "Implementing Java authentication with JAAS configuration, login modules, and subjects."
+tags:
+  - cheat-sheet
+  - java
+  - jaas
+  - authentication
+---
+
 # JAAS Cheat Sheet
 
 ## Introduction - What is JAAS authentication

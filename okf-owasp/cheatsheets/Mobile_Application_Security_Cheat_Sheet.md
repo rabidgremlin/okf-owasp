@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Mobile Application Security Cheat Sheet"
+description: "Protecting mobile application data, communications, authentication, and platform interactions."
+tags:
+  - cheat-sheet
+  - mobile-security
+  - data-protection
+---
+
 # Mobile Application Security Cheat Sheet
 
 Mobile application development presents certain security challenges that are

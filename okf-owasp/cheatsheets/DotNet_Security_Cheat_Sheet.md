@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "DotNet Security Cheat Sheet"
+description: "Securing modern .NET and ASP.NET Core applications with guidance for legacy frameworks."
+tags:
+  - cheat-sheet
+  - dotnet
+  - aspnet
+  - web-security
+---
+
 # DotNet Security Cheat Sheet
 
 ## Introduction

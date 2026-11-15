@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "MCP (Model Context Protocol) Security Cheat Sheet"
+description: "Securing MCP tools and servers through authorization, input validation, and trust boundaries."
+tags:
+  - cheat-sheet
+  - mcp
+  - ai-agents
+  - authorization
+---
+
 # MCP (Model Context Protocol) Security Cheat Sheet
 
 ## Introduction

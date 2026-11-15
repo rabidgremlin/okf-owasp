@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Ruby on Rails Cheat Sheet"
+description: "Applying Rails security controls to prevent injection, XSS, and other web vulnerabilities."
+tags:
+  - cheat-sheet
+  - ruby
+  - rails
+  - web-security
+---
+
 # Ruby on Rails Cheat Sheet
 
 ## Introduction
@@ -221,7 +232,7 @@ By default, Ruby on Rails apps use a RESTful URI structure. That means that path
 
 It is also possible, and probably recommended, to consider resource-based access control libraries such as [cancancan](https://github.com/CanCanCommunity/cancancan) (cancan replacement) or [pundit](https://github.com/varvet/pundit) to do this. This ensures that all operations on a database object are authorized by the business logic of the application.
 
-More general information about this class of vulnerability is in [OWASP Top 10:2025 A01 Broken Access Control](https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/) and the [Insecure Direct Object Reference Prevention Cheat Sheet](Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.md).
+More general information about this class of vulnerability is in [OWASP Top 10:2025 A01 Broken Access Control](../top_ten_risk_2025/A01_2025-Broken_Access_Control.md) and the [Insecure Direct Object Reference Prevention Cheat Sheet](Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.md).
 
 ### CSRF (Cross Site Request Forgery)
 

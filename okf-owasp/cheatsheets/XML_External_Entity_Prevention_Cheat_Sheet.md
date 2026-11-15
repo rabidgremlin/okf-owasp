@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "XML External Entity Prevention Cheat Sheet"
+description: "Configuring XML parsers to prevent external entity resolution, SSRF, and resource exhaustion."
+tags:
+  - cheat-sheet
+  - xxe
+  - xml
+  - parser-security
+---
+
 # XML External Entity Prevention Cheat Sheet
 
 ## Introduction

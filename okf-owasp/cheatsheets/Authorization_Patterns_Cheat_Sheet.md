@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Authorization Patterns Cheat Sheet"
+description: "Comparing service, gateway, and proxy patterns for authorization decisions and enforcement."
+tags:
+  - cheat-sheet
+  - authorization
+  - architecture
+  - access-control
+---
+
 # Authorization Patterns Cheat Sheet
 
 ## Introduction

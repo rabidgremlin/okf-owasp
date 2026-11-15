@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "AI Agent Security Cheat Sheet"
+description: "Securing autonomous AI agents against tool abuse, prompt injection, and data exposure."
+tags:
+  - cheat-sheet
+  - ai-agents
+  - prompt-injection
+  - least-privilege
+---
+
 # AI Agent Security Cheat Sheet
 
 ## Introduction

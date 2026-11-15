@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "HTTP Strict Transport Security Cheat Sheet"
+description: "Deploying HSTS to enforce HTTPS and reduce transport downgrade risks."
+tags:
+  - cheat-sheet
+  - hsts
+  - https
+  - transport-security
+---
+
 # HTTP Strict Transport Security Cheat Sheet
 
 ## Introduction

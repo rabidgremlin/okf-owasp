@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Infrastructure as Code Security Cheatsheet"
+description: "Securing infrastructure definitions throughout development, deployment, and runtime."
+tags:
+  - cheat-sheet
+  - infrastructure-as-code
+  - cloud-security
+  - devops
+---
+
 # Infrastructure as Code Security Cheatsheet
 
 <!---

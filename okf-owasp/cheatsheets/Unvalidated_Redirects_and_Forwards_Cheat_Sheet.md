@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Unvalidated Redirects and Forwards Cheat Sheet"
+description: "Preventing unsafe redirects and forwards that enable phishing and access control bypass."
+tags:
+  - cheat-sheet
+  - redirects
+  - phishing
+  - input-validation
+---
+
 # Unvalidated Redirects and Forwards Cheat Sheet
 
 ## Introduction

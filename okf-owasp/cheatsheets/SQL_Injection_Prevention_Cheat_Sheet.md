@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "SQL Injection Prevention Cheat Sheet"
+description: "Preventing SQL injection with prepared statements, safe query construction, and restricted privileges."
+tags:
+  - cheat-sheet
+  - sql
+  - injection
+  - parameterization
+---
+
 # SQL Injection Prevention Cheat Sheet
 
 ## Introduction

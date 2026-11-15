@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Software Supply Chain Security"
+description: "Protecting source code, dependencies, builds, and software artifacts across the supply chain."
+tags:
+  - cheat-sheet
+  - software-supply-chain
+  - dependencies
+  - build-security
+---
+
 # Software Supply Chain Security
 
 ## Introduction

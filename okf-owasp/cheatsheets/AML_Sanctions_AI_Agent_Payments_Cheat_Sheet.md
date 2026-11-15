@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "AML and Sanctions Compliance for AI Agent Payments Cheat Sheet"
+description: "Applying identity verification, sanctions screening, and audit controls to AI agent payments."
+tags:
+  - cheat-sheet
+  - ai-agents
+  - payments
+  - compliance
+---
+
 # AML and Sanctions Compliance for AI Agent Payments Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Content Security Policy Cheat Sheet"
+description: "Deploying Content Security Policy to reduce script injection, framing, and content-loading risks."
+tags:
+  - cheat-sheet
+  - csp
+  - xss
+  - http-headers
+---
+
 # Content Security Policy Cheat Sheet
 
 ## Introduction

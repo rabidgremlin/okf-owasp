@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Kubernetes Security Cheat Sheet"
+description: "Hardening Kubernetes clusters, workloads, access controls, and network configuration."
+tags:
+  - cheat-sheet
+  - kubernetes
+  - containers
+  - hardening
+---
+
 # Kubernetes Security Cheat Sheet
 
 ## Introduction
@@ -678,7 +689,7 @@ There are few open source tools that can help you on securing your managed-servi
 
 ## Supply Chain Security
 
-Container supply chain security is critical for preventing attacks that exploit vulnerabilities in the software delivery process. A compromised supply chain can lead to malicious code being deployed into production environments, potentially affecting thousands of containers and applications. See the [OWASP Software Supply Chain Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html) for broader guidance.
+Container supply chain security is critical for preventing attacks that exploit vulnerabilities in the software delivery process. A compromised supply chain can lead to malicious code being deployed into production environments, potentially affecting thousands of containers and applications. See the [OWASP Software Supply Chain Security Cheat Sheet](Software_Supply_Chain_Security_Cheat_Sheet.md) for broader guidance.
 
 Supply chain attacks in Kubernetes environments typically target:
 

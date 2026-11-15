@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Drone Security Cheat Sheet"
+description: "Protecting drone communications, access controls, software, and sensitive operational data."
+tags:
+  - cheat-sheet
+  - drones
+  - embedded-security
+  - communications
+---
+
 # Drone Security Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Virtual Patching Cheat Sheet"
+description: "Deploying and validating compensating security rules to block exploitation of known vulnerabilities."
+tags:
+  - cheat-sheet
+  - virtual-patching
+  - vulnerability-management
+  - waf
+---
+
 # Virtual Patching Cheat Sheet
 
 ## Introduction

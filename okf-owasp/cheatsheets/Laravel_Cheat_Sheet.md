@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Laravel Cheat Sheet"
+description: "Securing Laravel applications with framework controls and defensive coding practices."
+tags:
+  - cheat-sheet
+  - laravel
+  - php
+  - web-security
+---
+
 # Laravel Cheat Sheet
 
 ## Introduction

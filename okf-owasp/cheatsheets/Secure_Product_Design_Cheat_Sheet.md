@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Secure Product Design Cheat Sheet"
+description: "Applying security principles and explicit risk decisions throughout product design."
+tags:
+  - cheat-sheet
+  - secure-design
+  - security-principles
+  - threat-modeling
+---
+
 # Secure Product Design Cheat Sheet
 
 ## Introduction

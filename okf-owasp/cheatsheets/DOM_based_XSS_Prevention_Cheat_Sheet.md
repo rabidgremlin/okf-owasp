@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "DOM based XSS Prevention Cheat Sheet"
+description: "Preventing DOM-based XSS with safe browser APIs and context-specific encoding."
+tags:
+  - cheat-sheet
+  - xss
+  - dom
+  - output-encoding
+---
+
 # DOM based XSS Prevention Cheat Sheet
 
 ## Introduction

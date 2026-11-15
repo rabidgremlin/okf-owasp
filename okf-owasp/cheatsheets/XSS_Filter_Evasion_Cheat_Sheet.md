@@ -1,8 +1,19 @@
+---
+type: Cheat Sheet
+title: "XSS Filter Evasion Cheat Sheet"
+description: "Testing XSS defenses with payloads that demonstrate filter bypass techniques."
+tags:
+  - cheat-sheet
+  - xss
+  - security-testing
+  - filter-evasion
+---
+
 # XSS Filter Evasion Cheat Sheet
 
 ## Introduction
 
-This article is a guide to Cross Site Scripting (XSS) testing for application security professionals. This cheat sheet was originally based on RSnake's seminal XSS Cheat Sheet previously at: `http://ha.ckers.org/xss.html`. Now, the OWASP Cheat Sheet Series provides users with an updated and maintained version of the document. The very first OWASP Cheat Sheet, [Cross Site Scripting Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html), was inspired by RSnake's work and we thank RSnake for the inspiration!
+This article is a guide to Cross Site Scripting (XSS) testing for application security professionals. This cheat sheet was originally based on RSnake's seminal XSS Cheat Sheet previously at: `http://ha.ckers.org/xss.html`. Now, the OWASP Cheat Sheet Series provides users with an updated and maintained version of the document. The very first OWASP Cheat Sheet, [Cross Site Scripting Prevention](Cross_Site_Scripting_Prevention_Cheat_Sheet.md), was inspired by RSnake's work and we thank RSnake for the inspiration!
 
 ## Tests
 

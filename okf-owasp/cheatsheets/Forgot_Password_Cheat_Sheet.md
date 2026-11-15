@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Forgot Password Cheat Sheet"
+description: "Designing secure password reset and account recovery workflows with protected tokens."
+tags:
+  - cheat-sheet
+  - account-recovery
+  - passwords
+  - authentication
+---
+
 # Forgot Password Cheat Sheet
 
 ## Introduction

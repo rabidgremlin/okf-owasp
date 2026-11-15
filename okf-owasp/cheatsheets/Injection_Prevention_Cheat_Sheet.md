@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Injection Prevention Cheat Sheet"
+description: "Preventing injection attacks by separating untrusted data from executable syntax."
+tags:
+  - cheat-sheet
+  - injection
+  - input-validation
+---
+
 # Injection Prevention Cheat Sheet
 
 ## Introduction

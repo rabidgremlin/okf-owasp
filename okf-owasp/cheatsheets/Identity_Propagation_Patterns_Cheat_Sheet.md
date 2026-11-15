@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Identity Propagation Patterns Cheat Sheet"
+description: "Propagating identities between services while validating trust at each boundary."
+tags:
+  - cheat-sheet
+  - identity
+  - microservices
+  - trust-boundaries
+---
+
 # Identity Propagation Patterns Cheat Sheet
 
 ## Introduction

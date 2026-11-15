@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "REST Assessment Cheat Sheet"
+description: "Assessing REST API security through authorization, input, token, and resource-consumption testing."
+tags:
+  - cheat-sheet
+  - rest
+  - api-security
+  - security-testing
+---
+
 # REST Assessment Cheat Sheet
 
 ## About RESTful Web Services

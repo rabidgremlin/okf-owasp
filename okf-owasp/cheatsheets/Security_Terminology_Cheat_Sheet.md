@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Security Terminology Cheat Sheet"
+description: "Clarifying commonly confused security terms for data handling and protective controls."
+tags:
+  - cheat-sheet
+  - terminology
+  - secure-coding
+  - data-handling
+---
+
 # Security Terminology Cheat Sheet
 
 ## Introduction

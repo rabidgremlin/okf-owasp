@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Post-Quantum Cryptography Cheat Sheet"
+description: "Planning and rolling out post-quantum cryptography through inventory, testing, and migration."
+tags:
+  - cheat-sheet
+  - post-quantum
+  - cryptography
+  - migration
+---
+
 # Post-Quantum Cryptography Cheat Sheet
 
 ## Introduction

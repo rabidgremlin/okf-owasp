@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Microservices Security Cheat Sheet"
+description: "Protecting microservices communications, identities, authorization, and service boundaries."
+tags:
+  - cheat-sheet
+  - microservices
+  - architecture
+  - access-control
+---
+
 # Microservices Security Cheat Sheet
 
 ## Introduction

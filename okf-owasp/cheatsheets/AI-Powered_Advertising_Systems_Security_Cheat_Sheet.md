@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "AI-Powered Advertising Systems Security Cheat Sheet"
+description: "Securing AI advertising decisions, training data, inference, and outcome events."
+tags:
+  - cheat-sheet
+  - ai-security
+  - advertising
+  - privacy
+---
+
 # AI-Powered Advertising Systems Security Cheat Sheet
 
 ## Introduction
@@ -58,7 +69,7 @@ Every scoring surface exposed to a paying partner is a queryable oracle ([Tramè
 - Cross-check every monetization-changing boolean verdict against a non-LLM rules baseline.
 - Run an ensemble of two differently-trained VLMs on submitted images as defense-in-depth, not as the boundary. [Qi et al. 2023](https://arxiv.org/abs/2306.13213) Table 3 shows one image transferring across models, raising Perspective-API toxicity 9 to 23 percentage points over each target's no-attack baseline. The largest gains are between models sharing an LLM backbone and its alignment, so vary the backbone rather than only the weights, and expect both members to agree on some wrong verdicts. Route disagreement and high-risk tags (minors, celebrity likeness, trademark) to human review. The rules-based creative-policy classifier (allowlists, banned-terms lists, structural checks) is the automated floor; human review is the boundary for cases the automated path cannot resolve.
 - Use voice-clone and AI-content detectors to prioritize audio review, not to establish that a submission is authentic or authorized. [NIST AI 100-4, Sections 3.2.2.3 and 4.2](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf) describe limitations across generators, languages, and noisy audio. Measure false positives and false negatives on representative submissions, including unfamiliar generators. Verify voice-use authorization independently of detector results, and hold ambiguous or high-risk submissions for human review; a negative detector result does not establish permission to use a voice.
-- On-device LLMs ([Chrome Prompt API](https://developer.chrome.com/docs/ai/prompt-api)) reach only top-level windows and their same-origin iframes. A cross-origin ad iframe gets access only if the page delegates it with `allow="language-model"`, so never add that token to an ad slot. Every model output is untrusted at the DOM boundary; [CSP](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html) does not inherit into a cross-origin ad iframe.
+- On-device LLMs ([Chrome Prompt API](https://developer.chrome.com/docs/ai/prompt-api)) reach only top-level windows and their same-origin iframes. A cross-origin ad iframe gets access only if the page delegates it with `allow="language-model"`, so never add that token to an ad slot. Every model output is untrusted at the DOM boundary; [CSP](Content_Security_Policy_Cheat_Sheet.md) does not inherit into a cross-origin ad iframe.
 - Isolate every cache off tenant ID: KV cache (paged-attention serving stacks), RAG index namespace, plan cache, adapter pool ([OWASP LLM02:2025](https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/)). System-prompt secrecy is not a boundary ([LLM07:2025](https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/)); enforce thresholds in a deterministic post-processor keyed off the LLM's structured output.
 
 | Threat | Evidence | Runtime signal |
@@ -79,9 +90,9 @@ Every outcome callback is money and a training label in one packet.
 - Deduplicate on event ID, never on `(event_id, timestamp)`. Retain deduplication records for at least the entire signature-acceptance period, including clock skew, and for any longer retry period agreed with the partner. Set those periods from the callback delivery contract and measured delays, rather than a fixed 24-hour default. Reject expired callbacks; [RFC 9421 Section 7.2.2](https://www.rfc-editor.org/rfc/rfc9421.html#section-7.2.2) explains why signatures alone do not prevent replay.
 - Verify HMAC before any payload field influences a control-flow decision.
 - Separate financial settlement from training-label materialization.
-- Pin the certificate identity to a specific `partner_id`, using a typed Subject Alternative Name (SAN) entry or the Subject Public Key Info (SPKI) hash, not just a trusted issuer. [RFC 9525](https://www.rfc-editor.org/rfc/rfc9525.html), which obsoletes RFC 6125, states the Common Name RDN MUST NOT be used to identify a service, and extends that prohibition to other RDNs within the subjectName. See the [OWASP JSON Web Token Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet.html) for generic JWT hardening.
+- Pin the certificate identity to a specific `partner_id`, using a typed Subject Alternative Name (SAN) entry or the Subject Public Key Info (SPKI) hash, not just a trusted issuer. [RFC 9525](https://www.rfc-editor.org/rfc/rfc9525.html), which obsoletes RFC 6125, states the Common Name RDN MUST NOT be used to identify a service, and extends that prohibition to other RDNs within the subjectName. See the [OWASP JSON Web Token Cheat Sheet](JSON_Web_Token_Cheat_Sheet.md) for generic JWT hardening.
 - Auth incidents are data incidents: rotate credentials, mark exposure-window rows suspect, invalidate per-partner weights, invalidate model artifacts.
-- Tier every agentic tool by risk. HITL (human-in-the-loop) approvals bind a six-tuple: actor, tool, target, normalized parameters, timestamp, expiry ([OWASP LLM06:2025 Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)). Generic agentic patterns in the [OWASP AI Agent Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html).
+- Tier every agentic tool by risk. HITL (human-in-the-loop) approvals bind a six-tuple: actor, tool, target, normalized parameters, timestamp, expiry ([OWASP LLM06:2025 Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)). Generic agentic patterns in the [OWASP AI Agent Security Cheat Sheet](AI_Agent_Security_Cheat_Sheet.md).
 - Kill-switch fallback: a warm, pre-deployed rules-based bidder. A single control-plane flip diverts campaign traffic to it while the agent is quarantined.
 - Quarantine reward events past the fraud-adjudication lag; cap the maximum policy shift per epoch.
 

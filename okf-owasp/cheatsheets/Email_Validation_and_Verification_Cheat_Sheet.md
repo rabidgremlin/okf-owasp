@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Email Validation and Verification in Identity Systems Cheat Sheet"
+description: "Safely validating, normalizing, and verifying email addresses in identity workflows."
+tags:
+  - cheat-sheet
+  - email-validation
+  - identity
+  - account-security
+---
+
 # Email Validation and Verification in Identity Systems Cheat Sheet
 
 ## Introduction

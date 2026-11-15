@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Microservices based Security Arch Doc Cheat Sheet"
+description: "Documenting security architecture, threats, and controls for microservices systems."
+tags:
+  - cheat-sheet
+  - microservices
+  - architecture
+  - documentation
+---
+
 # Microservices based Security Arch Doc Cheat Sheet
 
 ## Introduction
@@ -146,7 +157,7 @@ To enumerate microservices endpoints that need to be tested during security test
 ##### Mapping to OWASP projects
 
 - [OWASP ASVS, V1 "Architecture, Design and Threat Modeling Requirements", #1.1.2](https://github.com/OWASP/ASVS/blob/master/4.0/en/0x10-V1-Architecture.md#v1-architecture-design-and-threat-modeling)
-- [OWASP Attack Surface Analysis Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Attack_Surface_Analysis_Cheat_Sheet.md)
+- [OWASP Attack Surface Analysis Cheat Sheet](Attack_Surface_Analysis_Cheat_Sheet.md)
 
 #### Data leakage analysis
 

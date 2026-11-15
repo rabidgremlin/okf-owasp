@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "JavaScript and TypeScript Security Cheat Sheet"
+description: "Applying secure coding practices to JavaScript and TypeScript applications."
+tags:
+  - cheat-sheet
+  - javascript
+  - typescript
+  - secure-coding
+---
+
 # JavaScript and TypeScript Security Cheat Sheet
 
 ## Introduction

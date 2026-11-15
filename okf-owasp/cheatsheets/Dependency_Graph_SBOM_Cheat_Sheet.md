@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Dependency Graph & SBOM Best Practices Cheat Sheet"
+description: "Using SBOMs and dependency graphs to inventory components and support vulnerability response."
+tags:
+  - cheat-sheet
+  - sbom
+  - dependencies
+  - software-supply-chain
+---
+
 # Dependency Graph & SBOM Best Practices Cheat Sheet
 
 ## Introduction

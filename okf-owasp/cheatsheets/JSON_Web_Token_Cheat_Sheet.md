@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "JSON Web Token Cheat Sheet"
+description: "Securing JWT creation, validation, storage, and replay defenses."
+tags:
+  - cheat-sheet
+  - jwt
+  - authentication
+  - tokens
+---
+
 # JSON Web Token Cheat Sheet
 
 ## Introduction

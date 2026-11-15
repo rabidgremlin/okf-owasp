@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Secure Code Review Cheat Sheet"
+description: "Reviewing source code and data flows to identify security flaws missed by automated tools."
+tags:
+  - cheat-sheet
+  - code-review
+  - secure-coding
+  - security-testing
+---
+
 # Secure Code Review Cheat Sheet
 
 ## Introduction

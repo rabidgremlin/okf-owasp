@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "WebSocket Security Cheat Sheet"
+description: "Securing WebSocket transport, authentication, messages, and resource consumption."
+tags:
+  - cheat-sheet
+  - websockets
+  - authentication
+  - api-security
+---
+
 # WebSocket Security Cheat Sheet
 
 ## Introduction

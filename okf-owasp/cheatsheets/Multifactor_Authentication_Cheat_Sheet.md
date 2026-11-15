@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Multifactor Authentication Cheat Sheet"
+description: "Choosing and implementing additional authentication factors and secure recovery mechanisms."
+tags:
+  - cheat-sheet
+  - mfa
+  - authentication
+  - account-recovery
+---
+
 # Multifactor Authentication Cheat Sheet
 
 ## Introduction

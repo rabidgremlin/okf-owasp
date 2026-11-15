@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Secure Coding with AI Cheat Sheet"
+description: "Controlling AI coding agents, generated dependencies, and development environment permissions."
+tags:
+  - cheat-sheet
+  - ai-agents
+  - secure-coding
+  - software-supply-chain
+---
+
 # Secure Coding with AI Cheat Sheet
 
 ## Introduction
@@ -6,7 +17,7 @@ AI coding tools have moved beyond code suggestion. In 2026, agentic coding tools
 
 This cheat sheet addresses the security risks specific to AI-assisted and agentic coding. It focuses on threats that do not exist in traditional development workflows and does not restate general secure coding guidance already covered elsewhere.
 
-For general secure coding, see the [Secure Coding Practices Quick Reference Guide](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/). For AI agent security beyond coding tools, see the [AI Agent Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html). For prompt injection prevention, see the [LLM Prompt Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html). For MCP protocol security, see the [MCP Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html).
+For general secure coding, see the [Secure Coding Practices Quick Reference Guide](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/). For AI agent security beyond coding tools, see the [AI Agent Security Cheat Sheet](AI_Agent_Security_Cheat_Sheet.md). For prompt injection prevention, see the [LLM Prompt Injection Prevention Cheat Sheet](LLM_Prompt_Injection_Prevention_Cheat_Sheet.md). For MCP protocol security, see the [MCP Security Cheat Sheet](MCP_Security_Cheat_Sheet.md).
 
 ## Threat Model and Trust Boundaries
 
@@ -106,7 +117,7 @@ Agentic coding tools ingest context from the repository, the network, and connec
 
 AI coding agents connect to MCP (Model Context Protocol) servers to access tools for file operations, database queries, API calls, and more. Compromised or malicious MCP servers are a direct supply chain risk to the development environment.
 
-For comprehensive MCP security guidance, see the [MCP Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html).
+For comprehensive MCP security guidance, see the [MCP Security Cheat Sheet](MCP_Security_Cheat_Sheet.md).
 
 ### Do
 
@@ -315,7 +326,7 @@ When multiple agents interact (e.g. a coding agent delegates to a search agent, 
 - Allow sub-agents to inherit the full permissions and credentials of the parent agent without scope restriction.
 - Assume that agent-to-agent communication is trusted because both agents are "your" tools.
 
-For comprehensive guidance on multi-agent trust boundaries, see the [AI Agent Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html) and the [MCP Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/MCP_Security_Cheat_Sheet.html) Section 8 (Multi-Server Isolation).
+For comprehensive guidance on multi-agent trust boundaries, see the [AI Agent Security Cheat Sheet](AI_Agent_Security_Cheat_Sheet.md) and the [MCP Security Cheat Sheet](MCP_Security_Cheat_Sheet.md) Section 8 (Multi-Server Isolation).
 
 ## Section 14: Human Accountability
 

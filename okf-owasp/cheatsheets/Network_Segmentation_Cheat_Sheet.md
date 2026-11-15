@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Network segmentation Cheat Sheet"
+description: "Designing network boundaries and access restrictions to limit lateral movement."
+tags:
+  - cheat-sheet
+  - network-security
+  - segmentation
+  - least-privilege
+---
+
 # Network segmentation Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Cookie Theft Mitigation Cheat Sheet"
+description: "Detecting stolen session cookies and reducing session hijacking through validation controls."
+tags:
+  - cheat-sheet
+  - cookies
+  - session-management
+  - session-hijacking
+---
+
 # Cookie Theft Mitigation Cheat Sheet
 
 ## Introduction

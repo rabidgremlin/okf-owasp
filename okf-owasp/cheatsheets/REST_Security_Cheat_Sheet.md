@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "REST Security Cheat Sheet"
+description: "Securing REST APIs through transport protection, access controls, validation, and token handling."
+tags:
+  - cheat-sheet
+  - rest
+  - api-security
+  - authorization
+---
+
 # REST Security Cheat Sheet
 
 ## Introduction

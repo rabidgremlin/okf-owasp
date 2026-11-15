@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Transaction Authorization Cheat Sheet"
+description: "Securing sensitive transaction approvals against bypass, manipulation, and social engineering."
+tags:
+  - cheat-sheet
+  - authorization
+  - transactions
+  - mfa
+---
+
 # Transaction Authorization Cheat Sheet
 
 ## Purpose and audience

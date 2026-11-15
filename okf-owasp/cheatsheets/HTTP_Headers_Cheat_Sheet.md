@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "HTTP Security Response Headers Cheat Sheet"
+description: "Configuring HTTP response headers to strengthen browser security and privacy."
+tags:
+  - cheat-sheet
+  - http-headers
+  - browser-security
+---
+
 # HTTP Security Response Headers Cheat Sheet
 
 ## Introduction
@@ -100,7 +110,7 @@ This is not a security header per se, but its security attributes are crucial.
 
 #### Recommendation
 
-- Please read [Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#cookies) for a detailed explanation on cookie configuration options.
+- Please read [Session Management Cheat Sheet](Session_Management_Cheat_Sheet.md#cookies) for a detailed explanation on cookie configuration options.
 
 ### Strict-Transport-Security (HSTS)
 

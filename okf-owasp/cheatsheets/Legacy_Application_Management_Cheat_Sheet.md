@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Legacy Application Management Cheat Sheet"
+description: "Managing security risks in legacy applications through maintenance and compensating controls."
+tags:
+  - cheat-sheet
+  - legacy-applications
+  - risk-management
+---
+
 # Legacy Application Management Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Pinning Cheat Sheet"
+description: "Evaluating and implementing certificate or public-key pinning and its operational risks."
+tags:
+  - cheat-sheet
+  - certificate-pinning
+  - tls
+  - certificates
+---
+
 # Pinning Cheat Sheet
 
 ## Introduction

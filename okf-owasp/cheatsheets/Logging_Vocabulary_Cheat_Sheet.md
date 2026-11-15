@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Application Logging Vocabulary Cheat Sheet"
+description: "Standardizing security event terminology and log attributes for consistent analysis."
+tags:
+  - cheat-sheet
+  - logging
+  - event-taxonomy
+  - monitoring
+---
+
 # Application Logging Vocabulary Cheat Sheet
 
 This document proposes a standard vocabulary for logging security events. The intent is to simplify monitoring and alerting such that, assuming developers trap errors and log them using this vocabulary, monitoring and alerting would be improved by simply keying on these terms.
@@ -820,7 +831,7 @@ CRITICAL
 ### malicious_csrf:[userid|IP]
 
 **Description**
-When a state-changing request arrives without a valid anti-CSRF token (or with a mismatched token, Origin, or Referer) it may indicate a cross-site request forgery attempt. Block the request and log the attempt. See the [OWASP Cross-Site Request Forgery Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) for token and Origin/Referer validation guidance.
+When a state-changing request arrives without a valid anti-CSRF token (or with a mismatched token, Origin, or Referer) it may indicate a cross-site request forgery attempt. Block the request and log the attempt. See the [OWASP Cross-Site Request Forgery Prevention Cheat Sheet](Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md) for token and Origin/Referer validation guidance.
 
 **Level:**
 WARN
@@ -1459,7 +1470,7 @@ WARN
 
 As important as what you DO log is what you DON'T log. Private or secret information, source code, keys, certs, etc. should never be logged.
 
-For comprehensive overview of items that should be excluded from logging, please see the [OWASP Logging Cheat Sheet](../cheatsheets/Logging_Cheat_Sheet.md#data-to-exclude).
+For comprehensive overview of items that should be excluded from logging, please see the [OWASP Logging Cheat Sheet](Logging_Cheat_Sheet.md#data-to-exclude).
 
 ## References
 

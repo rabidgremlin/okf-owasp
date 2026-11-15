@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Serverless / FaaS Security Cheat Sheet"
+description: "Securing event-driven functions through least privilege, isolation, and invocation controls."
+tags:
+  - cheat-sheet
+  - serverless
+  - faas
+  - cloud-security
+---
+
 # Serverless / FaaS Security Cheat Sheet
 
 ## Introduction

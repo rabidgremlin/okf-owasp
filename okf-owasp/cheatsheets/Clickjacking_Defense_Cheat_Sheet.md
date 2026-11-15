@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Clickjacking Defense Cheat Sheet"
+description: "Preventing clickjacking with framing restrictions, browser controls, and UI defenses."
+tags:
+  - cheat-sheet
+  - clickjacking
+  - csp
+  - http-headers
+---
+
 # Clickjacking Defense Cheat Sheet
 
 ## Introduction

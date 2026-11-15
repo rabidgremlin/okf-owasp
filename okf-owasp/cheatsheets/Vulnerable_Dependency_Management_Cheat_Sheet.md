@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Vulnerable Dependency Management Cheat Sheet"
+description: "Identifying and responding to vulnerable third-party dependencies using risk-based decisions."
+tags:
+  - cheat-sheet
+  - dependencies
+  - vulnerability-management
+  - software-supply-chain
+---
+
 # Vulnerable Dependency Management Cheat Sheet
 
 ## Introduction
@@ -18,7 +29,7 @@ It's a good approach because it allows the development team to focus on the real
 
 This aspect is referenced in the following projects:
 
-- [OWASP TOP 10 2017](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/) under the point _[A9 - Using Components with Known Vulnerabilities](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities.html)_.
+- [OWASP TOP 10 2017](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/) under the point _[A9 - Using Components with Known Vulnerabilities](../top_ten_risk_2025/A03_2025-Software_Supply_Chain_Failures.md)_.
 - [OWASP Application Security Verification Standard Project](https://owasp.org/www-project-application-security-verification-standard/) under the section _V14.2 Dependency_.
 
 Based on this context, it's important for a project to ensure that all the third-party dependencies implemented are clean of any security issue, and if they happen to contain any security issues, the development team needs to be aware of it and apply the required mitigation measures to secure the affected application.

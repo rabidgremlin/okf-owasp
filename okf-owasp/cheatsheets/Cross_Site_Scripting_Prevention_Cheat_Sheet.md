@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Cross Site Scripting Prevention Cheat Sheet"
+description: "Preventing XSS through context-aware output encoding, sanitization, and safe framework use."
+tags:
+  - cheat-sheet
+  - xss
+  - output-encoding
+  - sanitization
+---
+
 # Cross Site Scripting Prevention Cheat Sheet
 
 ## Introduction
@@ -213,7 +224,7 @@ Framework Security Protections, Output Encoding, and HTML Sanitization will prov
 Consider adopting the following controls in addition to the above.
 
 - Cookie Attributes - These change how JavaScript and browsers can interact with cookies. Cookie attributes try to limit the impact of an XSS attack but don’t prevent the execution of malicious content or address the root cause of the vulnerability.
-- Content Security Policy - An allowlist that prevents content being loaded. It’s easy to make mistakes with the implementation so it should not be your primary defense mechanism. Use a CSP as an additional layer of defense and have a look at the [cheatsheet here](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+- Content Security Policy - An allowlist that prevents content being loaded. It’s easy to make mistakes with the implementation so it should not be your primary defense mechanism. Use a CSP as an additional layer of defense and have a look at the [cheatsheet here](Content_Security_Policy_Cheat_Sheet.md).
 - Trusted Types - Where supported, enforce [Trusted Types](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API) using the Content Security Policy directive `require-trusted-types-for 'script'`. This makes covered DOM XSS injection sinks reject plain strings and require appropriately typed values created through policies. Trusted Types does not sanitize input by itself: policies must apply suitable validation or sanitization, and overly permissive policies can undermine the protection. Consider using the `trusted-types` CSP directive to restrict which policy names may be created. Check [MDN's browser compatibility information](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API#browser_compatibility) for your target browsers. A polyfill or tinyfill can help reuse policy code, but does not provide equivalent native sink-level enforcement in browsers that lack Trusted Types support.
 - Web Application Firewalls (WAFs) - WAFs can provide an additional layer of defense, but they cannot reliably prevent all XSS attacks or fix vulnerable application code. They may miss DOM-based XSS that occurs entirely in the browser. Do not rely on a WAF as a substitute for context-aware output encoding, safe DOM APIs, or HTML sanitization.
 

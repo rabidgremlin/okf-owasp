@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Cryptographic Storage Cheat Sheet"
+description: "Protecting stored sensitive data through encryption, key management, and architectural controls."
+tags:
+  - cheat-sheet
+  - cryptography
+  - data-protection
+  - key-management
+---
+
 # Cryptographic Storage Cheat Sheet
 
 ## Introduction

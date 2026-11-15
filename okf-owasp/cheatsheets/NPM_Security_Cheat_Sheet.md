@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "NPM Security best practices"
+description: "Reducing npm dependency risks through package management and supply chain controls."
+tags:
+  - cheat-sheet
+  - npm
+  - dependencies
+  - software-supply-chain
+---
+
 # NPM Security best practices
 
 The following cheatsheet covers several npm security best practices and productivity tips, useful for JavaScript and Node.js developers. This list was originally based on the [10 npm security best practices](https://snyk.io/blog/ten-npm-security-best-practices) from the Snyk blog.

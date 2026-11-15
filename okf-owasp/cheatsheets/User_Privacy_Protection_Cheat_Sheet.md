@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "User Privacy Protection Cheat Sheet"
+description: "Protecting user privacy and anonymity through data minimization and defensive application features."
+tags:
+  - cheat-sheet
+  - privacy
+  - anonymity
+  - data-protection
+---
+
 # User Privacy Protection Cheat Sheet
 
 ## Introduction

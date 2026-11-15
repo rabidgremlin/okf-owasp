@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "NodeJS Security Cheat Sheet"
+description: "Hardening Node.js application code, runtime behavior, dependencies, and configuration."
+tags:
+  - cheat-sheet
+  - nodejs
+  - javascript
+  - hardening
+---
+
 # NodeJS Security Cheat Sheet
 
 ## Introduction
@@ -92,7 +103,7 @@ In the above code, call to unlink the file and other file operations are within 
 #### Perform input validation
 
 Input validation is a crucial part of application security. Input validation failures can result in many types of application attacks. These include SQL Injection, Cross-Site Scripting, Command Injection, Local/Remote File Inclusion, Denial of Service, Directory Traversal, LDAP Injection and many other injection attacks. In order to avoid these attacks, input to your application should be sanitized first. The best input validation technique is to use a list of accepted inputs. However, if this is not possible, input should be first checked against expected input scheme and dangerous inputs should be escaped. In order to ease input validation in Node.js applications, there are some modules like [validator](https://www.npmjs.com/package/validator) and [express-mongo-sanitize](https://www.npmjs.com/package/express-mongo-sanitize).
-For detailed information on input validation, please refer to [Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html).
+For detailed information on input validation, please refer to [Input Validation Cheat Sheet](Input_Validation_Cheat_Sheet.md).
 
 JavaScript is a dynamic language and depending on how the framework parses a URL, the data seen by the application code can take many forms. Here are some examples after parsing a query string in express.js:
 
@@ -129,11 +140,11 @@ const logger = new (Winston.Logger) ({
 });
 ```
 
-You can provide different transports so that you can save errors to a separate log file and general application logs to a different log file. Additional information on security logging can be found in [Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html).
+You can provide different transports so that you can save errors to a separate log file and general application logs to a different log file. Additional information on security logging can be found in [Logging Cheat Sheet](Logging_Cheat_Sheet.md).
 
 #### Monitor the event loop
 
-When your application server is under heavy network traffic, it may not be able to serve its users. This is essentially a type of [Denial of Service (DoS)](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html) attack. The [toobusy-js](https://www.npmjs.com/package/toobusy-js) module allows you to monitor the event loop. It keeps track of the response time, and when it goes beyond a certain threshold, this module can indicate your server is too busy. In that case, you can stop processing incoming requests and send them `503 Server Too Busy` message so that your application stay responsive. Example use of the [toobusy-js](https://www.npmjs.com/package/toobusy-js) module is shown here:
+When your application server is under heavy network traffic, it may not be able to serve its users. This is essentially a type of [Denial of Service (DoS)](Denial_of_Service_Cheat_Sheet.md) attack. The [toobusy-js](https://www.npmjs.com/package/toobusy-js) module allows you to monitor the event loop. It keeps track of the response time, and when it goes beyond a certain threshold, this module can indicate your server is too busy. In that case, you can stop processing incoming requests and send them `503 Server Too Busy` message so that your application stay responsive. Example use of the [toobusy-js](https://www.npmjs.com/package/toobusy-js) module is shown here:
 
 ```JavaScript
 const toobusy = require('toobusy-js');
@@ -191,7 +202,7 @@ const limiter = new RateLimiter();
 limiter.addLimit('/login', 'GET', 5, 500); // login page can be requested 5 times at max within 500 seconds
 ```
 
-[CAPTCHA usage](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html#captcha) is also another common mechanism used against brute-forcing. There are modules developed for Node.js CAPTCHAs. A common module used in Node.js applications is [svg-captcha](https://www.npmjs.com/package/svg-captcha). It can be used as follows:
+[CAPTCHA usage](Credential_Stuffing_Prevention_Cheat_Sheet.md#captcha) is also another common mechanism used against brute-forcing. There are modules developed for Node.js CAPTCHAs. A common module used in Node.js applications is [svg-captcha](https://www.npmjs.com/package/svg-captcha). It can be used as follows:
 
 ```JavaScript
 const svgCaptcha = require('svg-captcha');
@@ -203,7 +214,7 @@ app.get('/captcha', function (req, res) {
 });
 ```
 
-[Account lockout](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html#account-lockout) is a recommended solution to keep attackers away from your valid users. Account lockout is possible with many modules like [mongoose](https://www.npmjs.com/package/mongoose). You can refer to [this blog post](http://devsmash.com/blog/implementing-max-login-attempts-with-mongoose) to see how account lockout is implemented in mongoose.
+[Account lockout](Authentication_Cheat_Sheet.md#account-lockout) is a recommended solution to keep attackers away from your valid users. Account lockout is possible with many modules like [mongoose](https://www.npmjs.com/package/mongoose). You can refer to [this blog post](http://devsmash.com/blog/implementing-max-login-attempts-with-mongoose) to see how account lockout is implemented in mongoose.
 
 #### Use Anti-CSRF tokens
 
@@ -380,7 +391,7 @@ app.use(helmet()); // Add various HTTP headers
 The top-level `helmet` function is a wrapper around 14 smaller middlewares.
 Below is a list of HTTP security headers covered by `helmet` middlewares:
 
-- **[Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)**: [HTTP Strict Transport Security (HSTS)](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html) dictates browsers that the application can only be accessed via HTTPS connections. In order to use it in your application, add the following codes:
+- **[Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security)**: [HTTP Strict Transport Security (HSTS)](HTTP_Strict_Transport_Security_Cheat_Sheet.md) dictates browsers that the application can only be accessed via HTTPS connections. In order to use it in your application, add the following codes:
 
 ```JavaScript
 app.use(helmet.hsts()); // default configuration
@@ -406,7 +417,7 @@ app.use(helmet.xssFilter()); // sets "X-XSS-Protection: 0"
 
 For moderns browsers, it is recommended to implement a strong **Content-Security-Policy** policy, as detailed in the next section.
 
-- **[Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy):** Content Security Policy is developed to reduce the risk of attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking). It allows content from a list that you decide. It has several directives each of which prohibits loading specific type of a content. You can refer to [Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html) for detailed explanation of each directive and how to use it. You can implement these settings in your application as follows:
+- **[Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy):** Content Security Policy is developed to reduce the risk of attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking). It allows content from a list that you decide. It has several directives each of which prohibits loading specific type of a content. You can refer to [Content Security Policy Cheat Sheet](Content_Security_Policy_Cheat_Sheet.md) for detailed explanation of each directive and how to use it. You can implement these settings in your application as follows:
 
 ```JavaScript
 app.use(
@@ -463,7 +474,7 @@ app.use(helmet.hidePoweredBy({ setTo: 'PHP 4.2.0' }));
 
 #### Keep your packages up-to-date
 
-Security of your application depends directly on how secure the third-party packages you use in your application are. Therefore, it is important to keep your packages up-to-date. It should be noted that [Using Components with Known Vulnerabilities](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities) is still in the OWASP Top 10. You can use [OWASP Dependency-Check](https://jeremylong.github.io/DependencyCheck/analyzers/nodejs.html) to see if any of the packages used in the project has a known vulnerability. Also, you can use [Retire.js](https://github.com/retirejs/retire.js/) to check JavaScript libraries with known vulnerabilities.
+Security of your application depends directly on how secure the third-party packages you use in your application are. Therefore, it is important to keep your packages up-to-date. It should be noted that [Using Components with Known Vulnerabilities](../top_ten_risk_2025/A03_2025-Software_Supply_Chain_Failures.md) is still in the OWASP Top 10. You can use [OWASP Dependency-Check](https://jeremylong.github.io/DependencyCheck/analyzers/nodejs.html) to see if any of the packages used in the project has a known vulnerability. Also, you can use [Retire.js](https://github.com/retirejs/retire.js/) to check JavaScript libraries with known vulnerabilities.
 
 Starting with version 6, `npm` introduced `audit`, which will warn about vulnerable packages:
 
@@ -477,7 +488,7 @@ npm audit
 npm audit fix
 ```
 
-There are several other tools you can use to check your dependencies. A more comprehensive list can be found in [Vulnerable Dependency Management CS](https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html#tools).
+There are several other tools you can use to check your dependencies. A more comprehensive list can be found in [Vulnerable Dependency Management CS](Vulnerable_Dependency_Management_Cheat_Sheet.md#tools).
 
 #### Do not use dangerous functions
 

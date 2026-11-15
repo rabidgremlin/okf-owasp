@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "LDAP Injection Prevention Cheat Sheet"
+description: "Preventing LDAP injection through escaping, input validation, and restricted privileges."
+tags:
+  - cheat-sheet
+  - ldap
+  - injection
+  - input-validation
+---
+
 # LDAP Injection Prevention Cheat Sheet
 
 ## Introduction

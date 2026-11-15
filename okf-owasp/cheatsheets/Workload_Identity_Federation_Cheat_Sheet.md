@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Workload Identity Federation Cheat Sheet"
+description: "Using OIDC workload federation to secure CI/CD deployments without long-lived cloud credentials."
+tags:
+  - cheat-sheet
+  - oidc
+  - workload-identity
+  - ci-cd
+---
+
 # Workload Identity Federation Cheat Sheet
 
 ## Introduction

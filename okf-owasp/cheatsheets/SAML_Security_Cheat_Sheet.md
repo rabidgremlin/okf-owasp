@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "SAML Security Cheat Sheet"
+description: "Validating SAML messages, signatures, and protocol flows for secure single sign-on."
+tags:
+  - cheat-sheet
+  - saml
+  - sso
+  - authentication
+---
+
 # SAML Security Cheat Sheet
 
 ## Introduction
@@ -103,7 +114,7 @@ Despite these concerns, IdP-initiated SSO remains supported for backward compati
     - Replay (6.1.2)
     - Message Insertion (6.1.3)
 - If the contract of the `RelayState` parameter is a URL, make sure the URL is validated and explicitly on an allowlist. This step will help counter the following attack:
-    - [Open Redirect](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html)
+    - [Open Redirect](Unvalidated_Redirects_and_Forwards_Cheat_Sheet.md)
 - Implement proper replay detection either at the response or assertion level. This will help counter the following attack:
     - Replay (6.1.2)
 
@@ -115,7 +126,7 @@ The SAML protocol is rarely the attack vector of choice, though it's important t
 
 Typically the security association between the Identity Provider (IdP) and Service Provider (SP) is created when the SP explicitly chooses to trust the IdP's X.509 signing certificate. Exactly how this occurs can have a strong bearing on overall security posture. How the certificate is generated, what the contents of the certificate are, and how the certificate's corresponding private key is protected all have strong bearing on security posture. e.g., if an attacker has access to use the IdP’s signing key, they can mint SAML responses containing any assertion they wish.
 
-In many cases, the method of manually setting the association is akin to [Certificate Pinning](https://cheatsheetseries.owasp.org/cheatsheets/Pinning_Cheat_Sheet.html), which is not ideal. Depending on the IdP and SP software, or various design considerations, this may be unavoidable.
+In many cases, the method of manually setting the association is akin to [Certificate Pinning](Pinning_Cheat_Sheet.md), which is not ideal. Depending on the IdP and SP software, or various design considerations, this may be unavoidable.
 
 Keep in mind that the certificate's signature type can be different from that of the XML document signing type. The certificate's corresponding private key is the only key that can be used to sign the XML document, but the signing algorithm is chosen at the IdP's discretion. The most commonly supported signing algorithm is rsa-sha256.
 
@@ -252,7 +263,7 @@ openssl req -x509 -new -nodes -key private.key -sha256 -days 365 -out certificat
 
 Many IdPs publish a metadata URL that contains basic configuration information including the SAML signing certificate. Many SPs can consume the data from the IdP, updating the Signing certificate information in near real-time. Using these options is ideal. This model matches exactly the intent of the [Certificate and Public Key Pinning](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning) when pinning must be used.
 
-The metadata URL should be protected using TLS where the server certificate comes from a WebPKI CA that is widely trusted and matches the guidance in the [Transport Layer Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html#certificates).
+The metadata URL should be protected using TLS where the server certificate comes from a WebPKI CA that is widely trusted and matches the guidance in the [Transport Layer Security Cheat Sheet](Transport_Layer_Security_Cheat_Sheet.md#certificates).
 
 The ideal state of the IdP to SP relationship is that of using the metadata URLs, regardless of what type of certificate is used. If metadata URLs are not used, great care must be taken to assure that an attacker does not convince an SP to trust the wrong certificate. Avoid emailing certificates. Instead, like the metadata URL, present them over properly configured TLS.
 

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Micro-Frontend Security Cheat Sheet"
+description: "Securing independently deployed frontend components and their shared trust boundaries."
+tags:
+  - cheat-sheet
+  - micro-frontends
+  - browser-security
+  - architecture
+---
+
 # Micro-Frontend Security Cheat Sheet
 
 ## Introduction

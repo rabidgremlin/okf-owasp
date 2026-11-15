@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "File Upload Cheat Sheet"
+description: "Validating and isolating uploaded files to prevent malicious content and unsafe retrieval."
+tags:
+  - cheat-sheet
+  - file-upload
+  - input-validation
+  - malware
+---
+
 # File Upload Cheat Sheet
 
 ## Introduction

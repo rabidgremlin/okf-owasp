@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Django Security Cheat Sheet"
+description: "Applying Django security features and configuration to prevent common web vulnerabilities."
+tags:
+  - cheat-sheet
+  - django
+  - python
+  - web-security
+---
+
 # Django Security Cheat Sheet
 
 ## Introduction
@@ -126,7 +137,7 @@ Django 6.0 and later provide built-in Content Security Policy (CSP) support. Ena
 
 For more details:
 
-- [OWASP Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
+- [OWASP Content Security Policy Cheat Sheet](Content_Security_Policy_Cheat_Sheet.md)
 - [Django Security Documentation](https://docs.djangoproject.com/en/stable/topics/security/)
 
 ## Cookies

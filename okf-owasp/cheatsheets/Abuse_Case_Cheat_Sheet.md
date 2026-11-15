@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Abuse Case Cheat Sheet (Historical)"
+description: "Historical guidance on identifying abuse cases and tracking security requirements."
+tags:
+  - cheat-sheet
+  - threat-modeling
+  - abuse-cases
+  - historical
+---
+
 # Abuse Case Cheat Sheet (Historical)
 
 ## Archive Statement
@@ -15,7 +26,7 @@ Often when the security level of an application is mentioned in requirements, th
 
 These security requirements are too generic, and thus useless for a development team...
 
-In order to build a secure application, from a pragmatic point of view, it is important to identify the attacks which the application must defend against, according to its business and technical context. Abuse cases were a frequently recommended _threat modeling_ technique, and reviewing the [threat modeling](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) cheat sheet may be helpful. In practice, the abuse case framework seems heavyweight and there are few published examples or success stories.
+In order to build a secure application, from a pragmatic point of view, it is important to identify the attacks which the application must defend against, according to its business and technical context. Abuse cases were a frequently recommended _threat modeling_ technique, and reviewing the [threat modeling](Threat_Modeling_Cheat_Sheet.md) cheat sheet may be helpful. In practice, the abuse case framework seems heavyweight and there are few published examples or success stories.
 
 ### Objective
 
@@ -74,7 +85,7 @@ that lead to proper protection of these critical business use cases.
 
 There are many different ways to define the list of abuse cases for a feature (that can be mapped to a user story in agile projects).
 
-[Threat Modeling](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) is a set of techniques for anticipating what can go wrong, and ensuring we do something about each identified possible scenario. Taking each item on the list of "what are we going to do about it" and writing an abuse case may help your engineering teams process the output.
+[Threat Modeling](Threat_Modeling_Cheat_Sheet.md) is a set of techniques for anticipating what can go wrong, and ensuring we do something about each identified possible scenario. Taking each item on the list of "what are we going to do about it" and writing an abuse case may help your engineering teams process the output.
 
 The project [OWASP Open SAMM](https://owasp.org/www-project-samm/) proposes the following approach in the _Stream B_ of the Security Practice _Requirements Driven Testing_ for the Maturity level 2:
 

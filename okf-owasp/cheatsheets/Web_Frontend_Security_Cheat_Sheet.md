@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Web Frontend Security Cheat Sheet"
+description: "Securing AJAX and frontend interactions across client and server trust boundaries."
+tags:
+  - cheat-sheet
+  - frontend
+  - javascript
+  - web-security
+---
+
 # Web Frontend Security Cheat Sheet
 
 ## Introduction

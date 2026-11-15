@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Threat Modeling Cheat Sheet"
+description: "Identifying threats, evaluating risks, and selecting mitigations during application design."
+tags:
+  - cheat-sheet
+  - threat-modeling
+  - risk-assessment
+  - secure-design
+---
+
 # Threat Modeling Cheat Sheet
 
 ## Introduction

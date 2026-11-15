@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Bot Management and Anti-Automation Cheat Sheet"
+description: "Mitigating abusive automated traffic with layered detection, rate limits, and monitoring."
+tags:
+  - cheat-sheet
+  - bot-management
+  - rate-limiting
+  - automated-threats
+---
+
 # Bot Management and Anti-Automation Cheat Sheet
 
 ## Introduction

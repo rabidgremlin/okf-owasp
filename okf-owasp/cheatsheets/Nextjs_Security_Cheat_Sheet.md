@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Next.js Security Cheat Sheet"
+description: "Securing Next.js server and client boundaries, data access, and application routes."
+tags:
+  - cheat-sheet
+  - nextjs
+  - react
+  - web-security
+---
+
 # Next.js Security Cheat Sheet
 
 ## Introduction

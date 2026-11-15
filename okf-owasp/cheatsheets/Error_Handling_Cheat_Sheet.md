@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Error Handling Cheat Sheet"
+description: "Handling application errors securely to limit information disclosure and preserve useful diagnostics."
+tags:
+  - cheat-sheet
+  - error-handling
+  - information-disclosure
+---
+
 # Error Handling Cheat Sheet
 
 ## Introduction

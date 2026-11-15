@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Secrets Management Cheat Sheet"
+description: "Managing application secrets through centralized storage, rotation, auditing, and access controls."
+tags:
+  - cheat-sheet
+  - secrets-management
+  - credentials
+  - rotation
+---
+
 # Secrets Management Cheat Sheet
 
 ## 1 Introduction

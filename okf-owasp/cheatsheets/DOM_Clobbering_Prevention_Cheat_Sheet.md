@@ -1,10 +1,21 @@
+---
+type: Cheat Sheet
+title: "DOM Clobbering Prevention Cheat Sheet"
+description: "Preventing HTML injection from overriding security-sensitive DOM properties and variables."
+tags:
+  - cheat-sheet
+  - dom-clobbering
+  - html-injection
+  - browser-security
+---
+
 # DOM Clobbering Prevention Cheat Sheet
 
 ## Introduction
 
 [DOM Clobbering](https://domclob.xyz/domc_wiki/#overview) is a type of code-reuse, HTML-only injection attack, where attackers confuse a web application by injecting HTML elements whose `id` or `name` attribute matches the name of security-sensitive variables or browser APIs, such as variables used for fetching remote content (e.g., script src), and overshadow their value.
 
-It is particularly relevant when script injection is not possible, e.g., when filtered by HTML sanitizers, or mitigated by disallowing or controlling script execution. In these scenarios, attackers may still inject non-script HTML markups into webpages and transform the initially secure markup into executable code, achieving [Cross-Site Scripting (XSS)](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
+It is particularly relevant when script injection is not possible, e.g., when filtered by HTML sanitizers, or mitigated by disallowing or controlling script execution. In these scenarios, attackers may still inject non-script HTML markups into webpages and transform the initially secure markup into executable code, achieving [Cross-Site Scripting (XSS)](Cross_Site_Scripting_Prevention_Cheat_Sheet.md).
 
 **This cheat sheet is a list of guidelines, secure coding patterns, and practices to prevent or restrict the impact of DOM Clobbering in your web application.**
 

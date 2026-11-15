@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "C-Based Toolchain Hardening Cheat Sheet"
+description: "Hardening C, C++, and Objective-C builds through compiler and linker security settings."
+tags:
+  - cheat-sheet
+  - compiler-hardening
+  - c
+  - cpp
+---
+
 # C-Based Toolchain Hardening Cheat Sheet
 
 ## Introduction

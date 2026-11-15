@@ -1,10 +1,21 @@
+---
+type: Cheat Sheet
+title: "Authorization Regression Testing Cheat Sheet"
+description: "Designing automated regression tests to detect broken access controls as applications evolve."
+tags:
+  - cheat-sheet
+  - authorization
+  - regression-testing
+  - access-control
+---
+
 # Authorization Regression Testing Cheat Sheet
 
 ## Introduction
 
 Authorization implementation is rarely static. As applications evolve, new API endpoints are added, data layers are refactored, and microservices are decoupled. While initial security testing might validate access controls at launch, the "Day 2" problem emerges quickly: **How do engineering teams ensure that new features or structural changes do not break existing authorization logic?**
 
-[Broken Access Control (BAC)](https://owasp.org/Top10/A01_2021-Broken_Access_Control/) was ranked the number-one risk in the OWASP Top Ten 2021, and [Insecure Direct Object Reference (IDOR)](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References) is one of its most frequently exploited sub-categories. This cheat sheet provides actionable, architectural guidance on implementing automated authorization regression testing within the Software Development Life Cycle (SDLC). By shifting from manual, point-in-time penetration testing to continuous, developer-centric regression suites, engineering teams can catch BAC, IDOR, and tenant isolation failures before they reach production.
+[Broken Access Control (BAC)](../top_ten_risk_2025/A01_2025-Broken_Access_Control.md) was ranked the number-one risk in the OWASP Top Ten 2021, and [Insecure Direct Object Reference (IDOR)](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References) is one of its most frequently exploited sub-categories. This cheat sheet provides actionable, architectural guidance on implementing automated authorization regression testing within the Software Development Life Cycle (SDLC). By shifting from manual, point-in-time penetration testing to continuous, developer-centric regression suites, engineering teams can catch BAC, IDOR, and tenant isolation failures before they reach production.
 
 For baseline controls, see the [Authorization Cheat Sheet](Authorization_Cheat_Sheet.md).
 

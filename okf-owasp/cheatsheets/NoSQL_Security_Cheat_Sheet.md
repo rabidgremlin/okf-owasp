@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "NoSQL Security Cheat Sheet"
+description: "Securing NoSQL queries, database access, and deployment configuration."
+tags:
+  - cheat-sheet
+  - nosql
+  - injection
+  - databases
+---
+
 # NoSQL Security Cheat Sheet
 
 ## Introduction
@@ -103,9 +114,9 @@ FindIterable<Document> restaurants = collection.find(expression);
 
 For more information please check following cheat sheets:
 
-[Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+[Authentication Cheat Sheet](Authentication_Cheat_Sheet.md)
 
-[Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+[Authorization Cheat Sheet](Authorization_Cheat_Sheet.md)
 
 ### Network & Transport Security
 

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Symfony Cheat Sheet"
+description: "Using Symfony security mechanisms to prevent common web application vulnerabilities."
+tags:
+  - cheat-sheet
+  - symfony
+  - php
+  - web-security
+---
+
 # Symfony Cheat Sheet
 
 ## Introduction

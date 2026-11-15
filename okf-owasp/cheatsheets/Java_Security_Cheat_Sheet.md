@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Java Security Cheat Sheet"
+description: "Applying Java platform security practices to application code and configuration."
+tags:
+  - cheat-sheet
+  - java
+  - secure-coding
+---
+
 # Java Security Cheat Sheet
 
 This cheat sheet highlights some specific topics for Java applications and references specific Cheat Sheets for more details.

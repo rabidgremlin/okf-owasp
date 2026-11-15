@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "LLM Prompt Injection Prevention Cheat Sheet"
+description: "Defending LLM applications and agents against direct and indirect prompt injection."
+tags:
+  - cheat-sheet
+  - llm
+  - prompt-injection
+  - ai-security
+---
+
 # LLM Prompt Injection Prevention Cheat Sheet
 
 ## Introduction

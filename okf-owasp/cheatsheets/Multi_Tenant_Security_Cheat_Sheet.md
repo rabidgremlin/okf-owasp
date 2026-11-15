@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Multi-Tenant Application Security Cheat Sheet"
+description: "Enforcing tenant isolation across application data, authorization, and shared infrastructure."
+tags:
+  - cheat-sheet
+  - multi-tenancy
+  - tenant-isolation
+  - authorization
+---
+
 # Multi-Tenant Application Security Cheat Sheet
 
 ## Introduction
@@ -405,7 +416,7 @@ A shared backup can contain data from several tenants. For a single-tenant recov
 - Alert on tenant-isolation control failures and repeated suspicious denial patterns.
 - Explicitly exclude secrets from logs and minimize sensitive tenant data. Mask or otherwise protect sensitive fields that genuinely need to be retained, according to the applicable policy.
 - Apply the documented access and retention policy for each audit-data class.
-- Configure collection, protection, and retention according to the [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html).
+- Configure collection, protection, and retention according to the [OWASP Logging Cheat Sheet](Logging_Cheat_Sheet.md).
 
 ## Do's and Don'ts
 

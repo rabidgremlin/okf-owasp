@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Automotive Security Cheat Sheet"
+description: "Protecting vehicle communications, software updates, diagnostic access, and sensitive data."
+tags:
+  - cheat-sheet
+  - automotive
+  - embedded-security
+---
+
 # Automotive Security Cheat Sheet
 
 ## Introduction

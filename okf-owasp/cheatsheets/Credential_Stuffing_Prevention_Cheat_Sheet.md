@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Credential Stuffing Prevention Cheat Sheet"
+description: "Defending login systems against credential stuffing, password spraying, and brute-force attacks."
+tags:
+  - cheat-sheet
+  - authentication
+  - credential-stuffing
+  - mfa
+---
+
 # Credential Stuffing Prevention Cheat Sheet
 
 ## Introduction

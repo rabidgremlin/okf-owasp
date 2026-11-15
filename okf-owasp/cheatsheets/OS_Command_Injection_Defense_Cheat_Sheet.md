@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "OS Command Injection Defense Cheat Sheet"
+description: "Preventing OS command injection with safe APIs, parameterization, and input constraints."
+tags:
+  - cheat-sheet
+  - command-injection
+  - input-validation
+---
+
 # OS Command Injection Defense Cheat Sheet
 
 ## Introduction

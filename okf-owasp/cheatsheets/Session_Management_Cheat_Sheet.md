@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Session Management Cheat Sheet"
+description: "Protecting session identifiers, cookies, and session lifecycles against hijacking and fixation."
+tags:
+  - cheat-sheet
+  - session-management
+  - cookies
+  - authentication
+---
+
 # Session Management Cheat Sheet
 
 ## Introduction

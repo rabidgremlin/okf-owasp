@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Authorization Testing Automation Cheat Sheet"
+description: "Automating authorization tests using access matrices and application-specific test data."
+tags:
+  - cheat-sheet
+  - authorization
+  - security-testing
+  - test-automation
+---
+
 # Authorization Testing Automation Cheat Sheet
 
 ## Introduction

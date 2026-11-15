@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "GitHub Actions Security Cheat Sheet"
+description: "Hardening GitHub Actions workflows, repository settings, credentials, and runner environments."
+tags:
+  - cheat-sheet
+  - github-actions
+  - ci-cd
+  - software-supply-chain
+---
+
 # GitHub Actions Security Cheat Sheet
 
 ## Introduction
@@ -17,7 +28,7 @@ Therefore, secure software development best practices must be applied, including
 For deeper guidance and recommended practices, see:
 
 - [NIST "Strategies for the Integration of Software Supply Chain Security in DevSecOps CI/CD Pipeline"](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204D.pdf);
-- [OWASP CI/CD Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet.html);
+- [OWASP CI/CD Security Cheat Sheet](CI_CD_Security_Cheat_Sheet.md);
 - [OWASP Secure Pipeline Verification Standard](https://owasp.org/www-project-spvs).
 
 ## Assume failure and have an incident response plan in place

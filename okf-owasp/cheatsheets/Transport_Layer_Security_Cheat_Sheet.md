@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Transport Layer Security Cheat Sheet"
+description: "Configuring TLS protocols, certificates, and cipher suites to protect application communications."
+tags:
+  - cheat-sheet
+  - tls
+  - https
+  - cryptography
+---
+
 # Transport Layer Security Cheat Sheet
 
 ## Introduction

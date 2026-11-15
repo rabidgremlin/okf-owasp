@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Zero Trust Architecture Cheat Sheet"
+description: "Implementing continuous verification, least privilege, and explicit trust boundaries across systems."
+tags:
+  - cheat-sheet
+  - zero-trust
+  - architecture
+  - least-privilege
+---
+
 # Zero Trust Architecture Cheat Sheet
 
 ## Introduction
@@ -16,7 +27,7 @@ Everything in your network is a resource that needs protection - servers, databa
 
 ### 2. All Communication is Secured Regardless of Network Location
 
-Every connection must be encrypted and authenticated, whether it's between your office and the cloud, between internal systems, or from home to work. Network location doesn't determine trust level. Use [strong encryption](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html) (TLS 1.3 or better) for everything.
+Every connection must be encrypted and authenticated, whether it's between your office and the cloud, between internal systems, or from home to work. Network location doesn't determine trust level. Use [strong encryption](Transport_Layer_Security_Cheat_Sheet.md) (TLS 1.3 or better) for everything.
 
 ### 3. Access to Resources is Granted on a Per-Session Basis
 
@@ -129,7 +140,7 @@ Now that you understand the principles and approach, let's get into the practica
 
 ### Multi-Factor Authentication (MFA)
 
-You need [MFA](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html) for everyone - employees, contractors, and partners. Here's what works best:
+You need [MFA](Multifactor_Authentication_Cheat_Sheet.md) for everyone - employees, contractors, and partners. Here's what works best:
 
 **Most Secure (Highly Phishing-Resistant):**
 
@@ -157,11 +168,11 @@ Set up conditional access so high-risk situations require stronger authenticatio
 - **Review access regularly**: Check who has access every quarter
 - **Separate admin accounts**: Don't use regular accounts for administration
 
-Follow comprehensive [authentication best practices](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) when implementing user account management.
+Follow comprehensive [authentication best practices](Authentication_Cheat_Sheet.md) when implementing user account management.
 
 ### Access Controls
 
-Follow these rules for giving people [access](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html):
+Follow these rules for giving people [access](Authorization_Cheat_Sheet.md):
 
 - **Least privilege**: Give the minimum access needed to do the job
 - **Just-in-time access**: Provide elevated access only when needed for a specific task
@@ -216,8 +227,8 @@ Implement these network protections:
 Protect your applications with these controls:
 
 - **Identity-aware proxy**: Check user identity before allowing app access
-- **Web Application Firewalls (WAFs)**: Use request filtering as defense in depth for common attack patterns, such as those covered by [OWASP CRS](https://devguide.owasp.org/en/09-operations/04-crs/). A WAF does not replace application authorization or business-rule enforcement; enforce [access control in trusted server-side code](https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/#how-to-prevent).
-- **API security gateways**: Authenticate every API call, validate request schemas, and enforce rate limits for microservices communication using [REST security best practices](https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html)
+- **Web Application Firewalls (WAFs)**: Use request filtering as defense in depth for common attack patterns, such as those covered by [OWASP CRS](https://devguide.owasp.org/en/09-operations/04-crs/). A WAF does not replace application authorization or business-rule enforcement; enforce [access control in trusted server-side code](../top_ten_risk_2025/A01_2025-Broken_Access_Control.md#how-to-prevent).
+- **API security gateways**: Authenticate every API call, validate request schemas, and enforce rate limits for microservices communication using [REST security best practices](REST_Security_Cheat_Sheet.md)
 - **Secure development**: Build security into your development process
 
 ### Protecting Data
@@ -225,7 +236,7 @@ Protect your applications with these controls:
 Keep your data safe with these methods:
 
 - **Classify data**: Label data by sensitivity level
-- **Use encryption**: Protect data whether it's stored or moving with proper [cryptographic storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+- **Use encryption**: Protect data whether it's stored or moving with proper [cryptographic storage](Cryptographic_Storage_Cheat_Sheet.md)
 - **Prevent data loss**: Monitor and block unauthorized data transfers
 - **Log all access**: Record who accesses what data and when
 
@@ -349,7 +360,7 @@ For containerized applications:
 
 **Relying only on network security** - Many organizations think they can just add network controls and call it Zero Trust. But Zero Trust is fundamentally about identity-based security, not network security. If you're still thinking in terms of "inside" and "outside" the network, you're missing the point. Focus on verifying identity and device health for every access request, regardless of where it comes from.
 
-**Not monitoring enough** - Zero Trust generates massive amounts of security data, and some organizations get overwhelmed and don't use it effectively. You need comprehensive logging and analysis capabilities, not just basic monitoring. Without proper visibility, you can't detect threats, tune policies, or prove compliance. Invest in SIEM tools and security analytics platforms that can handle the data volume, following [comprehensive logging practices](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html).
+**Not monitoring enough** - Zero Trust generates massive amounts of security data, and some organizations get overwhelmed and don't use it effectively. You need comprehensive logging and analysis capabilities, not just basic monitoring. Without proper visibility, you can't detect threats, tune policies, or prove compliance. Invest in SIEM tools and security analytics platforms that can handle the data volume, following [comprehensive logging practices](Logging_Cheat_Sheet.md).
 
 **Making security too hard for users** - If your Zero Trust implementation makes it painful for people to do their jobs, they'll find workarounds that bypass your security. The key is balancing security with user experience. Use risk-based authentication so low-risk activities are seamless, and only add friction when the risk level justifies it. Test your policies with real users before rolling them out.
 

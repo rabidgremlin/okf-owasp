@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Browser Extension Security Vulnerabilities Cheat Sheet"
+description: "Reducing browser extension risks from excessive permissions, data leakage, and unsafe code."
+tags:
+  - cheat-sheet
+  - browser-extensions
+  - permissions
+  - web-security
+---
+
 # Browser Extension Security Vulnerabilities Cheat Sheet
 
 ## 1. Permissions Overreach
@@ -99,7 +110,7 @@ document.body.appendChild(script);
 
 ### Mitigation: Code Injection
 
-Use CSP (Content Security Policy) to restrict script sources. For more details, refer to the [CSP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html). Avoid using eval() and innerHTML as they can execute malicious code. Prefer using extension messaging APIs instead of injecting scripts into web pages.
+Use CSP (Content Security Policy) to restrict script sources. For more details, refer to the [CSP Cheat Sheet](Content_Security_Policy_Cheat_Sheet.md). Avoid using eval() and innerHTML as they can execute malicious code. Prefer using extension messaging APIs instead of injecting scripts into web pages.
 
 ## 6. Malicious Updates
 

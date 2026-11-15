@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Passkey Security Cheat Sheet"
+description: "Implementing passkeys with secure relying-party configuration and authentication ceremonies."
+tags:
+  - cheat-sheet
+  - passkeys
+  - webauthn
+  - authentication
+---
+
 # Passkey Security Cheat Sheet
 
 ## Introduction

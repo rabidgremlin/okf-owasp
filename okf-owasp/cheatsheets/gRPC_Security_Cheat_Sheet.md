@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "gRPC Security Cheat Sheet"
+description: "Securing gRPC services through TLS, authentication, authorization, and message validation."
+tags:
+  - cheat-sheet
+  - grpc
+  - api-security
+  - tls
+---
+
 # gRPC Security Cheat Sheet
 
 ## Introduction

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "OAuth 2.0 Protocol Cheatsheet"
+description: "Securing OAuth 2.0 authorization flows, token handling, and replay defenses."
+tags:
+  - cheat-sheet
+  - oauth2
+  - authorization
+  - tokens
+---
+
 # OAuth 2.0 Protocol Cheatsheet
 
 This cheatsheet describes the best current security practices for [OAuth 2.0](https://www.rfc-editor.org/rfc/rfc6749.html) as derived from its RFC. OAuth became the standard for API protection and the basis for federated login using OpenID Connect. OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It enables clients to verify the identity of the end user based on the authentication performed by an authorization server, as well as to obtain basic profile information about the end user in an interoperable and REST-like manner.

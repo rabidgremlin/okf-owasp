@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Retrieval-Augmented Generation (RAG) Security Cheat Sheet"
+description: "Protecting retrieval-augmented generation pipelines against poisoned documents and unsafe retrieval."
+tags:
+  - cheat-sheet
+  - rag
+  - llm
+  - data-poisoning
+---
+
 # Retrieval-Augmented Generation (RAG) Security Cheat Sheet
 
 ## Introduction

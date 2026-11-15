@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Secure Integration of Third-Party Payment Gateways Cheat Sheet"
+description: "Securing payment gateway integration against order manipulation, spoofing, and payment fraud."
+tags:
+  - cheat-sheet
+  - payments
+  - webhooks
+  - business-logic
+---
+
 # Secure Integration of Third-Party Payment Gateways Cheat Sheet
 
 ## Introduction

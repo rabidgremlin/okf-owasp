@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Denial of Service Cheat Sheet"
+description: "Analyzing denial-of-service attack surfaces and designing layered availability defenses."
+tags:
+  - cheat-sheet
+  - denial-of-service
+  - availability
+---
+
 # Denial of Service Cheat Sheet
 
 ## Introduction

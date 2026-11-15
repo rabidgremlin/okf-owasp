@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Third Party JavaScript Management Cheat Sheet"
+description: "Managing third-party JavaScript deployment, execution, and user data exposure risks."
+tags:
+  - cheat-sheet
+  - javascript
+  - third-party-risk
+  - privacy
+---
+
 # Third Party JavaScript Management Cheat Sheet
 
 ## Introduction
@@ -217,7 +228,7 @@ It is important to know that in order for SRI to work, the vendor host needs [CO
 
 ### Keeping JavaScript libraries updated
 
-[OWASP Top 10:2025 A03 Software Supply Chain Failures](https://owasp.org/Top10/2025/A03_2025-Software_Supply_Chain_Failures/) describes the problem of using components with known vulnerabilities. This includes JavaScript libraries. JavaScript libraries must be kept up to date, as previous versions can have known vulnerabilities which can lead to the site typically being vulnerable to [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/). There are several tools out there that can help identify such libraries. One such tool is the free open source tool [RetireJS](https://retirejs.github.io)
+[OWASP Top 10:2025 A03 Software Supply Chain Failures](../top_ten_risk_2025/A03_2025-Software_Supply_Chain_Failures.md) describes the problem of using components with known vulnerabilities. This includes JavaScript libraries. JavaScript libraries must be kept up to date, as previous versions can have known vulnerabilities which can lead to the site typically being vulnerable to [Cross Site Scripting](https://owasp.org/www-community/attacks/xss/). There are several tools out there that can help identify such libraries. One such tool is the free open source tool [RetireJS](https://retirejs.github.io)
 
 ### Sandboxing with iframe
 

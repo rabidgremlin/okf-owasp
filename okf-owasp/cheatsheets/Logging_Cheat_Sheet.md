@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Logging Cheat Sheet"
+description: "Designing application security logging, event collection, and protection of log data."
+tags:
+  - cheat-sheet
+  - logging
+  - monitoring
+  - incident-response
+---
+
 # Logging Cheat Sheet
 
 ## Introduction
@@ -228,7 +239,7 @@ Document the interface referencing the organization-specific event classificatio
 
 If possible create this log handler as a standard module that can be thoroughly tested, deployed in multiple applications, and added to a list of approved and recommended modules.
 
-- Validate event data from other trust zones before logging it. If a field is malformed, omit or safely replace that field and record the validation failure with bounded, safe context; do not discard the entire security event. This preserves evidence while following [OWASP guidance to log validation failures and encode log data safely](https://github.com/OWASP/Top10/blob/master/2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md#user-content-how-to-prevent)
+- Validate event data from other trust zones before logging it. If a field is malformed, omit or safely replace that field and record the validation failure with bounded, safe context; do not discard the entire security event. This preserves evidence while following [OWASP guidance to log validation failures and encode log data safely](../top_ten_risk_2025/A09_2025-Security_Logging_and_Alerting_Failures.md#how-to-prevent)
 - Perform sanitization on all event data to prevent log injection attacks e.g. carriage return (CR), line feed (LF) and delimiter characters (and optionally to remove sensitive data)
 - Encode data correctly for the output (logged) format
 - If writing to databases, read, understand, and apply the SQL injection cheat sheet

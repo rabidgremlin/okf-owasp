@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "XML Security Cheat Sheet"
+description: "Defending XML processing against malformed documents, unsafe resolution, and parsing attacks."
+tags:
+  - cheat-sheet
+  - xml
+  - parser-security
+  - input-validation
+---
+
 # XML Security Cheat Sheet
 
 ## Introduction

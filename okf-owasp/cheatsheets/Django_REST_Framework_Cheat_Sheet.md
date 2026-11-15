@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Django REST Framework (DRF) Cheat Sheet"
+description: "Securing Django REST Framework authentication, permissions, throttling, and serializers."
+tags:
+  - cheat-sheet
+  - django
+  - api-security
+  - python
+---
+
 # Django REST Framework (DRF) Cheat Sheet
 
 ## Introduction
@@ -133,7 +144,7 @@ Be aware of possible business logic errors that result in security bugs. Since b
 
 ### Secret Management
 
-**Secrets should never be hardcoded. The best practice is to use a Secret Manager.** For more information review OWASP [Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)
+**Secrets should never be hardcoded. The best practice is to use a Secret Manager.** For more information review OWASP [Secrets Management Cheat Sheet](Secrets_Management_Cheat_Sheet.md)
 
 ## Updating Django and DRF and Having a Process for Updating Dependencies
 

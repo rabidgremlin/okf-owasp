@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Cross-site leaks Cheat Sheet"
+description: "Understanding and mitigating browser side channels that reveal cross-site information."
+tags:
+  - cheat-sheet
+  - xs-leaks
+  - side-channels
+  - browser-security
+---
+
 # Cross-site leaks Cheat Sheet
 
 ## Introduction
@@ -43,7 +54,7 @@ The SameSite attribute of a cookie tells the browser whether it should include t
 
 It is worth mentioning here the attitude of Chromium based browsers in which cookies without SameSite attribute set by default are treated as Lax.
 
-SameSite cookies are a strong **defense-in-depth** mechanism against **some** classes of XS Leaks and [CSRF attacks](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html), which can significantly reduce the attack surface, but may not completely cut them (see, e.g., [window-based XS Leak](https://soheilkhodayari.github.io/same-site-wiki/docs/attacks/xs-leaks.html) attacks like [frame counting](https://xsleaks.dev/docs/attacks/frame-counting/) and [navigation](https://xsleaks.dev/docs/attacks/navigations/)).
+SameSite cookies are a strong **defense-in-depth** mechanism against **some** classes of XS Leaks and [CSRF attacks](Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.md), which can significantly reduce the attack surface, but may not completely cut them (see, e.g., [window-based XS Leak](https://soheilkhodayari.github.io/same-site-wiki/docs/attacks/xs-leaks.html) attacks like [frame counting](https://xsleaks.dev/docs/attacks/frame-counting/) and [navigation](https://xsleaks.dev/docs/attacks/navigations/)).
 
 ### How do we know that two sites are SameSite?
 
@@ -90,7 +101,7 @@ If you don't need other origins to embed your application in a frame, you can co
 - **Content Security Policy `frame-ancestors`** directive. [Read more about syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors).
 - **X-Frame-Options**  - mainly if you want to support old browsers.
 
-Setting up framing protection efficiently blocks the ability to embed your application in a frame on the attacker-controlled origin and protects from other attacks like [Clickjacking](https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html).
+Setting up framing protection efficiently blocks the ability to embed your application in a frame on the attacker-controlled origin and protects from other attacks like [Clickjacking](Clickjacking_Defense_Cheat_Sheet.md).
 
 #### Fetch metadata (Sec-Fetch-Dest)
 

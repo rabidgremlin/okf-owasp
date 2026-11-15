@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Database Security Cheat Sheet"
+description: "Securing relational database connections, credentials, permissions, and configuration."
+tags:
+  - cheat-sheet
+  - databases
+  - configuration
+  - least-privilege
+---
+
 # Database Security Cheat Sheet
 
 ## Introduction

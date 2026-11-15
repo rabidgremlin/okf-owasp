@@ -1,10 +1,21 @@
+---
+type: Cheat Sheet
+title: "Bean Validation Cheat Sheet"
+description: "Implementing Java input constraints with Jakarta Bean Validation."
+tags:
+  - cheat-sheet
+  - java
+  - input-validation
+  - jakarta-validation
+---
+
 # Bean Validation Cheat Sheet
 
 ## Introduction
 
 This article is focused on providing clear, simple, actionable guidance for providing Java Bean Validation security functionality in your applications.
 
-Bean validation (aka [Jakarta Validation](https://beanvalidation.org/)) is one of the most common ways to perform [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) in Java. It is an application layer agnostic validation spec which provides the developer with the means to define a set of validation constraints on a domain model and then perform validation of those constraints through out the various application tiers.
+Bean validation (aka [Jakarta Validation](https://beanvalidation.org/)) is one of the most common ways to perform [input validation](Input_Validation_Cheat_Sheet.md) in Java. It is an application layer agnostic validation spec which provides the developer with the means to define a set of validation constraints on a domain model and then perform validation of those constraints through out the various application tiers.
 
 One advantage of this approach is that the validation constraints and the corresponding validators are only written once, thus reducing duplication of effort and ensuring uniformity:
 

@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "DEPRECATED: Transport Layer Protection Cheat Sheet"
+description: "Deprecated transport protection guidance directing readers to the Transport Layer Security Cheat Sheet."
+tags:
+  - cheat-sheet
+  - tls
+  - transport-security
+  - deprecated
+---
+
 # DEPRECATED: Transport Layer Protection Cheat Sheet
 
 The Transport Layer Protection Cheat Sheet has been deprecated.

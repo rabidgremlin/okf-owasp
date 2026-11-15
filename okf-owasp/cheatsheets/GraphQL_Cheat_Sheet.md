@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "GraphQL Cheat Sheet"
+description: "Securing GraphQL APIs through input validation, access controls, and resource limits."
+tags:
+  - cheat-sheet
+  - graphql
+  - api-security
+  - input-validation
+---
+
 # GraphQL Cheat Sheet
 
 ## Introduction

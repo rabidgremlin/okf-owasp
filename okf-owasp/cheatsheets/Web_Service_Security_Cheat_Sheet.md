@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Web Service Security Cheat Sheet"
+description: "Protecting web service communications, identities, message integrity, and resource usage."
+tags:
+  - cheat-sheet
+  - web-services
+  - transport-security
+  - authentication
+---
+
 # Web Service Security Cheat Sheet
 
 ## Introduction

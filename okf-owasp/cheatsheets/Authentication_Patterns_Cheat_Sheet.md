@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Authentication Patterns Cheat Sheet"
+description: "Comparing authentication enforcement patterns and their architectural trust boundaries."
+tags:
+  - cheat-sheet
+  - authentication
+  - architecture
+  - trust-boundaries
+---
+
 # Authentication Patterns Cheat Sheet
 
 ## Introduction
@@ -19,7 +30,7 @@ For authorization and for propagating an authenticated identity between services
 
 ## Service-Level Embedded Authentication
 
-In this pattern, each service handles primary authentication itself: it manages identities and credentials, verifies them, and implements the authentication workflows, typically with username/password or API keys. All authentication logic and subject data storage live inside the service, in custom code or built-in libraries. If you have to maintain such a service, the credential handling must follow the [Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) and the [Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html).
+In this pattern, each service handles primary authentication itself: it manages identities and credentials, verifies them, and implements the authentication workflows, typically with username/password or API keys. All authentication logic and subject data storage live inside the service, in custom code or built-in libraries. If you have to maintain such a service, the credential handling must follow the [Authentication Cheat Sheet](Authentication_Cheat_Sheet.md) and the [Password Storage Cheat Sheet](Password_Storage_Cheat_Sheet.md).
 
 ![Service-Level Embedded Authentication](../assets/Service_Level_Embedded_Authentication.png)
 
@@ -144,7 +155,7 @@ Patterns with decentralized authentication (like [Service-Level Embedded Authent
 
 Security risks increase significantly when authentication logic and credentials are handled directly within application code. Centralized enforcement, whether at the IdP, at the edge, or in the kernel, limits exposure, enforces stronger boundaries, and reduces the risk of misconfiguration. However, trust leakage must be prevented, because it directly undermines the principle of least privilege. This depends not only on where authentication occurs, but also on how identity information is propagated and verified downstream. Without trustworthy, tamper-resistant propagation, even strong initial authentication can be undermined, weakening trust boundaries and the system's ability to make reliable authorization decisions. The [Identity Propagation Patterns Cheat Sheet](Identity_Propagation_Patterns_Cheat_Sheet.md) compares forwarding, token exchange, and trusted internal assertions, including their validation requirements and limitations.
 
-**Note:** Token theft, replay protection, session lifecycle, and reauthentication are critical when implementing any of these patterns. They are covered in the [Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) and the [Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html).
+**Note:** Token theft, replay protection, session lifecycle, and reauthentication are critical when implementing any of these patterns. They are covered in the [Authentication Cheat Sheet](Authentication_Cheat_Sheet.md) and the [Session Management Cheat Sheet](Session_Management_Cheat_Sheet.md).
 
 ## Recommendations
 

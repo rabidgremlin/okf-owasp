@@ -1,3 +1,13 @@
+---
+type: Cheat Sheet
+title: "Prototype Pollution Prevention Cheat Sheet"
+description: "Preventing JavaScript prototype pollution through safe objects and runtime defenses."
+tags:
+  - cheat-sheet
+  - prototype-pollution
+  - javascript
+---
+
 # Prototype Pollution Prevention Cheat Sheet
 
 ## Explanation

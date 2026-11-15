@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Authentication Cheat Sheet"
+description: "Protecting user authentication through secure credentials, login flows, and account controls."
+tags:
+  - cheat-sheet
+  - authentication
+  - passwords
+  - identity
+---
+
 # Authentication Cheat Sheet
 
 ## Introduction
@@ -118,7 +129,7 @@ Re-authentication is critical when an account has experienced high-risk activity
 - **Context-Aware Decisions**
   Make re-authentication decisions based on context (e.g., geolocation, device type, prior patterns)
 - **Secure Session Management**
-  Invalidate sessions after re-authentication and rotate tokens—see the [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
+  Invalidate sessions after re-authentication and rotate tokens—see the [OWASP Session Management Cheat Sheet](Session_Management_Cheat_Sheet.md)
 
 ### Consider Strong Transaction Authentication
 
@@ -375,14 +386,14 @@ Web applications should not make the job of password managers more difficult tha
 
 User email addresses often change. The following process is recommended to handle such situations in a system:
 
-*Note: The process is less stringent with [Multifactor Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html), as proof-of-identity is stronger than relying solely on a password.*
+*Note: The process is less stringent with [Multifactor Authentication](Multifactor_Authentication_Cheat_Sheet.md), as proof-of-identity is stronger than relying solely on a password.*
 
-### Recommended Process If the User HAS [Multifactor Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html) Enabled
+### Recommended Process If the User HAS [Multifactor Authentication](Multifactor_Authentication_Cheat_Sheet.md) Enabled
 
 1. Confirm the validity of the user's authentication cookie/token. If not valid, display a login screen.
 2. Describe the process for changing the registered email address to the user.
 3. Ask the user to submit a proposed new email address, ensuring it complies with system rules.
-4. Request the use of [Multifactor Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html) for identity verification.
+4. Request the use of [Multifactor Authentication](Multifactor_Authentication_Cheat_Sheet.md) for identity verification.
 5. Store the proposed new email address as a pending change.
 6. Create and store **two** time-limited nonces for (a) system administrators' notification, and (b) user confirmation.
 7. Send two email messages with links that include those nonces:

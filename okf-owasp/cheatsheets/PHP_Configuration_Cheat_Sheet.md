@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "PHP Configuration Cheat Sheet"
+description: "Hardening PHP deployment settings and runtime configuration."
+tags:
+  - cheat-sheet
+  - php
+  - configuration
+  - hardening
+---
+
 # PHP Configuration Cheat Sheet
 
 ## Introduction

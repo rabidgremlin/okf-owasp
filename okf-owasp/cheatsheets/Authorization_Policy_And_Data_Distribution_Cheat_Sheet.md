@@ -1,3 +1,14 @@
+---
+type: Cheat Sheet
+title: "Authorization Policy and Data Distribution Cheat Sheet"
+description: "Distributing authorization policies and decision data with reliable ownership and freshness."
+tags:
+  - cheat-sheet
+  - authorization
+  - policy-management
+  - data-distribution
+---
+
 # Authorization Policy and Data Distribution Cheat Sheet
 
 ## Introduction
