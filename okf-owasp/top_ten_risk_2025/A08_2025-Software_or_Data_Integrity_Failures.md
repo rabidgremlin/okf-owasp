@@ -7,6 +7,13 @@ tags:
   - software-integrity
   - data-integrity
   - deserialization
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md
+    title: "A08:2025 Software or Data Integrity Failures"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A08:2025 Software or Data Integrity Failures

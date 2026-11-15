@@ -7,6 +7,13 @@ tags:
   - authentication
   - credential-security
   - session-management
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A07_2025-Authentication_Failures.md
+    title: "A07:2025 Authentication Failures"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A07:2025 Authentication Failures

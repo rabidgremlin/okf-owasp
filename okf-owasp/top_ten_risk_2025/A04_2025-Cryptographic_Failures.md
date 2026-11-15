@@ -7,6 +7,13 @@ tags:
   - cryptography
   - data-protection
   - key-management
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A04_2025-Cryptographic_Failures.md
+    title: "A04:2025 Cryptographic Failures"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A04:2025 Cryptographic Failures

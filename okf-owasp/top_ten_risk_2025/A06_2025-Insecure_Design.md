@@ -7,6 +7,13 @@ tags:
   - secure-design
   - threat-modeling
   - security-architecture
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A06_2025-Insecure_Design.md
+    title: "A06:2025 Insecure Design"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A06:2025 Insecure Design

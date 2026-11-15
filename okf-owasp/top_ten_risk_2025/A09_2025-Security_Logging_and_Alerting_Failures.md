@@ -7,6 +7,13 @@ tags:
   - security-logging
   - alerting
   - incident-response
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md
+    title: "A09:2025 Security Logging & Alerting Failures"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A09:2025 Security Logging & Alerting Failures

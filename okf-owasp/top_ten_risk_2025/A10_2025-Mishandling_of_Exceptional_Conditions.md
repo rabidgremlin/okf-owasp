@@ -7,6 +7,13 @@ tags:
   - error-handling
   - exception-handling
   - fail-secure
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md
+    title: "A10:2025 Mishandling of Exceptional Conditions"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A10:2025 Mishandling of Exceptional Conditions

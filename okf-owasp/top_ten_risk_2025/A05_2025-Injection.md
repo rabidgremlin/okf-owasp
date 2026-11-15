@@ -7,6 +7,13 @@ tags:
   - injection
   - sql-injection
   - cross-site-scripting
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A05_2025-Injection.md
+    title: "A05:2025 Injection"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A05:2025 Injection

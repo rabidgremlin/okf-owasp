@@ -6,6 +6,13 @@ tags:
   - top-ten-risk
   - access-control
   - authorization
+sources:
+  - id: owasp-original
+    resource: https://github.com/OWASP/Top10/blob/3a31f35346c3f4e90f350395124382fa53af2afe/2025/docs/en/A01_2025-Broken_Access_Control.md
+    title: "A01:2025 Broken Access Control"
+generated:
+  by: human:rabidgremlin
+  at: "2026-11-15T22:50:46Z"
 ---
 
 # A01:2025 Broken Access Control
