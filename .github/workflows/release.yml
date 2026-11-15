@@ -25,7 +25,13 @@ jobs:
         run: |
           set -euo pipefail
           staging_dir="$(mktemp -d "$RUNNER_TEMP/owasp-bundle.XXXXXX")"
-          cp -a okf-owasp/. "$staging_dir/"
+          (
+            cd okf-owasp
+            find . -type f -name '*.md' -print0 |
+              while IFS= read -r -d '' file; do
+                cp --parents -- "$file" "$staging_dir/"
+              done
+          )
           cp LICENSE "$staging_dir/LICENSE"
           cat > "$staging_dir/README.md" <<'EOF'
           # OWASP OKF Bundle
